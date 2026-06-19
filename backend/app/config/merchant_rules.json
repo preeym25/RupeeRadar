@@ -1,0 +1,15 @@
+{
+  "rules": [
+    { "patterns": ["swiggy", "zomato", "eatfit", "dominos", "mcdonalds", "burger king"], "category": "Food", "confidence": 0.9 },
+    { "patterns": ["uber", "ola", "rapido", "irctc", "makemytrip", "goibibo", "indigo", "spicejet", "fastag", "netc", "iocl", "bpcl", "hpcl"], "category": "Travel", "confidence": 0.9 },
+    { "patterns": ["amazon", "amzn", "flipkart", "myntra", "ajio", "meesho", "reliance retail"], "category": "Shopping", "confidence": 0.9 },
+    { "patterns": ["airtel", "jio", "vi ", "vodafone", "bsnl", "tata power", "bescom", "electricity", "water bill"], "category": "Bills", "confidence": 0.85 },
+    { "patterns": ["emi", "loan", "bajaj fin", "hdfc loan", "sbi loan"], "category": "EMI", "confidence": 0.9 },
+    { "patterns": ["netflix", "spotify", "youtube", "hotstar", "disney", "prime video", "apple.com/bill", "google play", "adobe", "notion", "chatgpt", "openai"], "category": "Subscriptions", "confidence": 0.9 },
+    { "patterns": ["salary", "payroll", "neft cr", "neft credit"], "category": "Salary", "confidence": 0.85 },
+    { "patterns": ["rent", "landlord", "housing"], "category": "Rent", "confidence": 0.85 },
+    { "patterns": ["sip", "groww", "zerodha", "upstox", "cams", "kfintech", "mf ", "mutual fund", "nse", "bse"], "category": "Investments", "confidence": 0.9 },
+    { "patterns": ["lic", "hdfc life", "policybazaar", "insurance"], "category": "Bills", "confidence": 0.8 },
+    { "patterns": ["atm wdl", "nfs/cash", "cash withdrawal"], "category": "Other", "confidence": 0.7 }
+  ]
+}

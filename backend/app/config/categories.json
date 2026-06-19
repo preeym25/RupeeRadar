@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": "Food",
+      "label": "Food",
+      "description": "Restaurants, food delivery, groceries, cafes"
+    },
+    {
+      "id": "Travel",
+      "label": "Travel",
+      "description": "Flights, cabs, fuel, hotels, tolls, trains"
+    },
+    {
+      "id": "Shopping",
+      "label": "Shopping",
+      "description": "E-commerce, retail, fashion, electronics"
+    },
+    {
+      "id": "Bills",
+      "label": "Bills",
+      "description": "Utilities, mobile, internet, insurance premiums"
+    },
+    {
+      "id": "EMI",
+      "label": "EMI",
+      "description": "Loan repayments and EMIs"
+    },
+    {
+      "id": "Subscriptions",
+      "label": "Subscriptions",
+      "description": "Streaming, SaaS, memberships, autopay services"
+    },
+    {
+      "id": "Salary",
+      "label": "Salary",
+      "description": "Salary credits and payroll deposits"
+    },
+    {
+      "id": "Rent",
+      "label": "Rent",
+      "description": "Monthly rent and housing payments"
+    },
+    {
+      "id": "Investments",
+      "label": "Investments",
+      "description": "SIPs, mutual funds, stocks, broker transfers"
+    },
+    {
+      "id": "Other",
+      "label": "Other",
+      "description": "Uncategorized or ambiguous transactions"
+    }
+  ]
+}
