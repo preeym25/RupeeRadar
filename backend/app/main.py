@@ -1,14 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import analyze, health, transactions
+from app.api.routes import analyze, health
 from app.settings import get_settings
-from app.database import init_db
 
 settings = get_settings()
-
-# Initialize database on startup
-init_db()
 
 app = FastAPI(
     title="RupeeRadar API",
@@ -26,4 +22,3 @@ app.add_middleware(
 
 app.include_router(health.router, prefix="/api/v1")
 app.include_router(analyze.router, prefix="/api/v1")
-app.include_router(transactions.router, prefix="/api/v1")
