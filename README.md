@@ -75,14 +75,19 @@ Golden test files planned for later phases:
 - `mixed_spend.csv`
 - `recurring_heavy.csv`
 
-## API (Phase 0)
+## API
 
 | Method | Path | Description |
 |--------|------|-------------|
 | GET | `/api/v1/health` | Service health + Groq LLM status |
-| POST | `/api/v1/analyze` | Upload statement (Phase 2) |
+| POST | `/api/v1/analyze` | Upload CSV statement; returns full analysis |
+| GET | `/api/v1/analyze/{job_id}` | Retrieve stored analysis result |
+| GET | `/api/v1/analyze/{job_id}/transactions` | Paginated transactions (`page`, `size`, `category`, `recurring`) |
+| DELETE | `/api/v1/analyze/{job_id}` | Purge session data |
 
 Interactive docs: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+Example analysis output: `sample_data/sample_analysis_output.json`
 
 ## Groq configuration
 
@@ -94,7 +99,7 @@ Interactive docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ## Development phases
 
-See [Docs/implementation-plan.md](./Docs/implementation-plan.md). **Phase 0** (current) provides scaffolding; analysis logic begins in Phase 1.
+See [Docs/implementation-plan.md](./Docs/implementation-plan.md). **Phase 2** completes the backend API pipeline; frontend integration is Phase 3.
 
 ## Tests
 

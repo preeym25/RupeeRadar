@@ -12,4 +12,4 @@ def test_health_returns_ok():
     assert data["status"] == "ok"
     assert data["service"] == "rupeeradar-api"
     assert data["llm_provider"] == "groq"
-    assert data["llm_enabled"] is False
+    assert isinstance(data["llm_enabled"], bool)
