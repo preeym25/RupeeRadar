@@ -72,6 +72,11 @@ async def run_analysis(file: UploadFile) -> AnalysisResult:
 
         t2 = time.perf_counter()
         categorized = categorize(clean_result.transactions)
+        
+        if settings.enable_llm:
+            from app.pipeline.categorizer.llm_classifier import categorize_with_llm
+            categorized = categorize_with_llm(categorized)
+            
         logger.info("Pipeline [%s]: categorized in %.2fs", job_id, time.perf_counter() - t2)
 
         t3 = time.perf_counter()
@@ -87,6 +92,11 @@ async def run_analysis(file: UploadFile) -> AnalysisResult:
         t4 = time.perf_counter()
         metrics = compute_metrics(transactions, recurring)
         insights = generate_insights(transactions, metrics, recurring)
+        
+        if settings.enable_llm:
+            from app.pipeline.insights import enrich_with_llm
+            insights = enrich_with_llm(insights, transactions, metrics, recurring)
+            
         logger.info(
             "Pipeline [%s]: metrics + %d insights in %.2fs",
             job_id,

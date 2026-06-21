@@ -1,7 +1,8 @@
 {
   "rules": [
-    { "patterns": ["swiggy", "zomato", "eatfit", "dominos", "mcdonalds", "burger king", "uber eats", "blinkit", "dunzo", "zepto"], "category": "Food", "confidence": 0.9 },
-    { "patterns": ["uber", "ola", "rapido", "irctc", "makemytrip", "goibibo", "indigo", "spicejet", "fastag", "netc", "iocl", "bpcl", "hpcl"], "category": "Travel", "confidence": 0.9 },
+    { "patterns": ["swiggy", "zomato", "eatfit", "dominos", "mcdonalds", "burger king", "uber eats", "dunzo"], "category": "Food", "confidence": 0.9 },
+    { "patterns": ["reliance smart", "bigbasket", "blinkit", "grofers", "zepto"], "category": "Groceries", "confidence": 0.9 },
+    { "patterns": ["uber", "ola", "rapido", "irctc", "makemytrip", "make my trip", "goibibo", "indigo", "spicejet", "fastag", "netc", "iocl", "bpcl", "hpcl"], "category": "Travel", "confidence": 0.9 },
     { "patterns": ["amazon", "amzn", "flipkart", "myntra", "ajio", "meesho", "reliance retail"], "category": "Shopping", "confidence": 0.9 },
     { "patterns": ["airtel", "jio", "vi ", "vodafone", "bsnl", "tata power", "bescom", "electricity", "water bill"], "category": "Bills", "confidence": 0.85 },
     { "patterns": ["emi", "loan", "bajaj fin", "hdfc loan", "sbi loan"], "category": "EMI", "confidence": 0.9 },

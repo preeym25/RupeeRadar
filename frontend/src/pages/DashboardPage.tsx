@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { CategoryChart } from '../components/CategoryChart'
+import { TrendsChart } from '../components/TrendsChart'
 import { InsightCards } from '../components/InsightCards'
 import { RecurringList } from '../components/RecurringList'
 import { ReportView } from '../components/ReportView'
@@ -17,11 +18,11 @@ export function DashboardPage() {
 
   if (!result) {
     return (
-      <div className="rounded-xl border border-slate-200 bg-white p-10 text-center">
-        <p className="text-slate-600">No analysis yet. Upload a bank statement to get started.</p>
+      <div className="rounded-xl border border-border bg-surface p-10 text-center">
+        <p className="text-foreground/70">No analysis yet. Upload a bank statement to get started.</p>
         <Link
           to="/"
-          className="mt-4 inline-block rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
+          className="mt-4 inline-block rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
         >
           Upload statement
         </Link>
@@ -41,12 +42,12 @@ export function DashboardPage() {
     <div className="space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-slate-900">Dashboard</h1>
-          <p className="text-sm text-slate-500">{result.filename}</p>
+          <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
+          <p className="text-base font-medium text-foreground break-all">{result.filename}</p>
         </div>
         <Link
           to="/"
-          className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+          className="rounded-md bg-brand-active px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition-opacity"
         >
           New upload
         </Link>
@@ -54,16 +55,16 @@ export function DashboardPage() {
 
       <SummaryCards metrics={result.metrics} />
 
-      <nav className="flex flex-wrap gap-2">
+      <nav className="flex flex-wrap space-x-4 border-b border-border">
         {tabs.map((t) => (
           <button
             key={t.id}
             type="button"
             onClick={() => setTab(t.id)}
-            className={`rounded-lg px-4 py-2 text-sm font-medium ${
+            className={`px-3 py-2 text-sm font-medium border-b-2 -mb-[1px] transition-colors ${
               tab === t.id
-                ? 'bg-emerald-600 text-white'
-                : 'bg-white text-slate-600 ring-1 ring-slate-200 hover:bg-slate-50'
+                ? 'border-brand-active text-brand-active'
+                : 'border-transparent text-foreground-variant hover:text-foreground hover:border-border'
             }`}
           >
             {t.label}
@@ -72,9 +73,12 @@ export function DashboardPage() {
       </nav>
 
       {tab === 'overview' && (
-        <div className="grid gap-6 lg:grid-cols-2">
-          <CategoryChart metrics={result.metrics} />
-          <InsightCards insights={result.insights.slice(0, 3)} />
+        <div className="space-y-6">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <CategoryChart metrics={result.metrics} />
+            <InsightCards insights={result.insights.slice(0, 3)} />
+          </div>
+          <TrendsChart transactions={result.transactions} />
         </div>
       )}
       {tab === 'transactions' && <TransactionTable transactions={result.transactions} />}

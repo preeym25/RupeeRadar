@@ -43,15 +43,26 @@ def generate_insights(
     # Top category share
     if metrics.top_categories:
         top = metrics.top_categories[0]
-        add(
-            title="Top spending category",
-            body=(
-                f"{top.category.value} is your largest expense at "
-                f"₹{top.amount:,.0f} ({top.percentage:.1f}% of total spend)."
-            ),
-            amount=top.amount,
-            category=top.category.value,
-        )
+        if top.category.value == Category.OTHER.value:
+            add(
+                title="Top spending category",
+                body=(
+                    f"Other makes up {top.percentage:.1f}% of your spend "
+                    f"(₹{top.amount:,.0f}). Consider reviewing these transactions to categorize them better."
+                ),
+                amount=top.amount,
+                category=top.category.value,
+            )
+        else:
+            add(
+                title="Top spending category",
+                body=(
+                    f"{top.category.value} is your largest expense at "
+                    f"₹{top.amount:,.0f} ({top.percentage:.1f}% of total spend)."
+                ),
+                amount=top.amount,
+                category=top.category.value,
+            )
 
     # Recurring total
     if recurring and metrics.recurring_monthly_total > 0:
@@ -85,7 +96,7 @@ def generate_insights(
         add(
             title="Active subscriptions",
             body=(
-                f"You have {len(subscriptions)} active subscriptions costing "
+                f"You have {len(subscriptions)} active subscription(s) out of {len(recurring)} recurring payments, costing "
                 f"₹{sub_total:,.0f}/month."
             ),
             amount=sub_total,
@@ -221,5 +232,84 @@ def _category_spend_by_month(
         if txn.date.strftime("%Y-%m") != month:
             continue
         cat = txn.category.value if txn.category else Category.OTHER.value
-        totals[cat] += txn.amount
     return dict(totals)
+
+
+def enrich_with_llm(
+    insights: list[Insight],
+    transactions: list[Transaction],
+    metrics: FinancialMetrics,
+    recurring: list[RecurringGroup],
+) -> list[Insight]:
+    """Generate personalized financial insights using Groq LLM."""
+    from app.llm.groq_client import get_groq_client
+    from app.settings import get_settings
+    import json
+    import logging
+
+    logger = logging.getLogger(__name__)
+    client = get_groq_client()
+    settings = get_settings()
+    
+    if not client:
+        return insights
+        
+    summary = {
+        "total_spend": metrics.total_spend,
+        "total_income": metrics.total_income,
+        "savings": metrics.savings,
+        "top_categories": [{"category": c.category.value, "amount": c.amount} for c in metrics.top_categories],
+        "recurring_total": metrics.recurring_monthly_total
+    }
+    
+    system_prompt = """You are a financial advisor. Based on the user's spending summary, generate 3 personalized financial insights.
+Provide actionable advice, observations on spending habits, or warnings about high spend areas.
+Return ONLY a valid JSON object matching this schema:
+{
+  "insights": [
+    {
+      "title": "Short catchy title",
+      "body": "Detailed insight text (max 2 sentences).",
+      "severity": "info" | "warning" | "positive",
+      "category": "Optional category name if applicable, else null"
+    }
+  ]
+}
+"""
+    try:
+        completion = client.chat.completions.create(
+            model=settings.groq_model,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": json.dumps(summary)}
+            ],
+            temperature=0.7,
+            response_format={"type": "json_object"}
+        )
+        content = completion.choices[0].message.content
+        if not content:
+            return insights
+            
+        data = json.loads(content)
+        llm_insights = data.get("insights", [])
+        
+        for i in llm_insights:
+            sev = i.get("severity", "info")
+            if sev not in ["info", "warning", "positive"]:
+                sev = "info"
+                
+            insights.append(Insight(
+                id=str(uuid.uuid4()),
+                title=i.get("title", "AI Insight"),
+                body=i.get("body", ""),
+                category=i.get("category"),
+                amount=None,
+                severity=sev,
+                source="llm"
+            ))
+            
+    except Exception:
+        logger.exception("Error generating LLM insights.")
+        
+    return insights
+

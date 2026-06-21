@@ -85,6 +85,22 @@ async def get_transactions(
     }
 
 
+from fastapi.responses import HTMLResponse
+from app.report.generator import generate_html_report
+
+@router.get("/{job_id}/report", response_class=HTMLResponse)
+async def get_report(job_id: str, format: str = Query("html")):
+    """Generate a printable HTML report."""
+    result = session_store.get(job_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Analysis not found or session expired.")
+    
+    html_content = generate_html_report(result)
+    return HTMLResponse(content=html_content)
+
+
+
+
 @router.delete("/{job_id}", status_code=204)
 async def delete_analysis(job_id: str) -> None:
     """Purge session data for privacy."""

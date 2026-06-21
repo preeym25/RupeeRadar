@@ -11,7 +11,7 @@ export function UploadZone({
 }: UploadZoneProps) {
   return (
     <label
-      className={`flex min-h-48 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-slate-300 bg-white px-6 py-10 text-center transition hover:border-emerald-500 hover:bg-emerald-50/40 ${loading ? 'pointer-events-none opacity-60' : ''}`}
+      className={`flex min-h-48 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-surface px-6 py-10 text-center transition hover:border-primary hover:bg-primary/5 ${loading ? 'pointer-events-none opacity-60' : ''}`}
     >
       <input
         type="file"
@@ -23,13 +23,13 @@ export function UploadZone({
           if (file) onFileSelect(file)
         }}
       />
-      <p className="text-lg font-semibold text-slate-800">
+      <p className="text-lg font-semibold text-foreground">
         {loading ? 'Analyzing statement…' : 'Upload bank statement'}
       </p>
-      <p className="mt-2 text-sm text-slate-500">
+      <p className="mt-2 text-sm text-foreground/60">
         Drag & drop or click to select CSV (Excel & PDF in later phases)
       </p>
-      <p className="mt-4 text-xs text-slate-400">
+      <p className="mt-4 text-xs text-foreground/40">
         Your data is processed ephemerally and not stored permanently.
       </p>
     </label>
