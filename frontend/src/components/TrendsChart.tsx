@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import type { Transaction } from '../types/finance'
 
 interface TrendsChartProps {
@@ -20,7 +20,7 @@ function getWeekString(dateString: string) {
 export function TrendsChart({ transactions }: TrendsChartProps) {
   const [interval, setInterval] = useState<Interval>('Monthly')
 
-  const { data, total, percentChange } = useMemo(() => {
+  const { data } = useMemo(() => {
     const debits = transactions.filter(t => t.type === 'debit')
     debits.sort((a, b) => a.date.localeCompare(b.date))
     
@@ -63,101 +63,92 @@ export function TrendsChart({ transactions }: TrendsChartProps) {
       return { key, display, amount: grouped[key] }
     })
 
-    const totalSpend = chartData.reduce((sum, item) => sum + item.amount, 0)
-    let change = 0
-    if (chartData.length >= 2) {
-      const last = chartData[chartData.length - 1].amount
-      const prev = chartData[chartData.length - 2].amount
-      if (prev > 0) {
-        change = ((last - prev) / prev) * 100
-      }
-    }
-
-    return { data: chartData, total: totalSpend, percentChange: change }
+    return { data: chartData }
   }, [transactions, interval])
 
   if (transactions.length === 0) {
     return (
-      <div className="flex h-[400px] items-center justify-center rounded-xl border border-border bg-surface text-sm text-foreground/60">
+      <div className="flex h-[450px] items-center justify-center glass-panel rounded-2xl hairline-border text-sm text-on-surface-variant">
         Trends will appear after analysis
       </div>
     )
   }
 
   return (
-    <div className="flex h-[450px] flex-col rounded-xl border border-border bg-surface p-6">
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
+    <div className="flex h-[450px] flex-col glass-panel rounded-2xl hairline-border p-lg relative">
+      <div className="mb-lg flex flex-wrap items-center justify-between gap-4 relative z-10">
         <div>
-          <h3 className="text-lg font-bold text-foreground">Spend Trends</h3>
-          <div className="mt-1 flex items-baseline gap-2">
-            <span className="text-2xl font-bold text-foreground">
-              ₹{total.toLocaleString('en-IN', { maximumFractionDigits: 0 })}
-            </span>
-            {data.length >= 2 && (
-              <span className={`text-sm font-medium ${percentChange > 0 ? 'text-error' : 'text-secondary'}`}>
-                {percentChange > 0 ? '+' : ''}{percentChange.toFixed(1)}% vs last {interval.toLowerCase().replace('ly', '')}
-              </span>
-            )}
-          </div>
+          <h3 className="font-serif text-title-md text-foreground">Wealth Trajectory</h3>
+          <p className="text-label-sm text-on-surface-variant mt-1">Income vs Expenditure ({interval})</p>
         </div>
         
-        <div className="flex rounded-lg bg-surface-bright p-1">
-          {INTERVALS.map(int => (
+        <div className="flex gap-sm">
+          {INTERVALS.filter(int => int !== 'Yearly').map(int => (
             <button
               key={int}
               onClick={() => setInterval(int)}
-              className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors ${
+              className={`px-md py-xs rounded-full text-label-sm font-bold transition-all ${
                 interval === int
-                  ? 'bg-primary text-primary-foreground shadow-sm'
-                  : 'text-foreground/70 hover:text-foreground'
+                  ? 'bg-primary text-primary-foreground shadow-[0_0_10px_rgba(16,185,129,0.3)]'
+                  : 'bg-surface-container-high text-on-surface hover:bg-surface-container-highest'
               }`}
             >
-              {int}
+              {int === 'Daily' ? '1D' : int === 'Weekly' ? '1W' : '1M'}
             </button>
           ))}
         </div>
       </div>
 
-      <div className="min-h-0 flex-1 w-full">
+      <div className="min-h-0 flex-1 w-full relative z-10">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
             <defs>
-              <linearGradient id="colorSpend" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="var(--color-primary)" stopOpacity={0.3}/>
-                <stop offset="95%" stopColor="var(--color-primary)" stopOpacity={0}/>
+              <linearGradient id="glowLine" x1="0%" x2="100%" y1="0%" y2="0%">
+                <stop offset="0%" style={{stopColor:'var(--color-primary)', stopOpacity:0.1}} />
+                <stop offset="50%" style={{stopColor:'var(--color-primary)', stopOpacity:1}} />
+                <stop offset="100%" style={{stopColor:'var(--color-primary)', stopOpacity:0.3}} />
               </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur result="coloredBlur" stdDeviation="4" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
             </defs>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--color-border)" opacity={0.5} />
+            {/* Removed cartesian grid entirely to match the clean design */}
             <XAxis 
               dataKey="display" 
               axisLine={false} 
               tickLine={false} 
-              tick={{ fontSize: 12, fill: 'var(--color-foreground)', opacity: 0.7 }} 
-              dy={10}
+              tick={{ fontSize: 10, fill: 'var(--color-surface-foreground-variant)', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.1em' }} 
+              dy={15}
             />
             <YAxis 
               axisLine={false} 
               tickLine={false} 
-              tick={{ fontSize: 12, fill: 'var(--color-foreground)', opacity: 0.7 }}
+              tick={{ fontSize: 12, fill: 'var(--color-surface-foreground-variant)', opacity: 0.5 }}
               tickFormatter={(value) => `₹${value >= 1000 ? (value / 1000).toFixed(0) + 'k' : value}`}
             />
             <Tooltip 
-              formatter={(value: any) => [`₹${Number(value).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`, 'Spend']}
-              labelStyle={{ color: 'var(--color-foreground)' }}
+              formatter={(value: number) => [`₹${Number(value).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`, 'Amount']}
+              labelStyle={{ color: 'var(--color-surface-foreground-variant)', fontSize: '12px' }}
               contentStyle={{ 
-                backgroundColor: 'var(--color-surface-bright)', 
-                borderColor: 'var(--color-border)', 
+                backgroundColor: 'rgba(16, 20, 21, 0.9)', 
+                borderColor: 'rgba(144, 144, 151, 0.2)', 
                 color: 'var(--color-foreground)', 
-                borderRadius: '0.5rem' 
+                borderRadius: '8px',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.5)'
               }}
+              itemStyle={{ color: 'var(--color-primary)', fontWeight: 'bold' }}
             />
             <Area 
               type="monotone" 
               dataKey="amount" 
               stroke="var(--color-primary)" 
-              strokeWidth={3}
-              fillOpacity={1} 
-              fill="url(#colorSpend)" 
+              strokeWidth={4}
+              fillOpacity={0}
+              style={{ filter: 'url(#glow)' }}
             />
           </AreaChart>
         </ResponsiveContainer>

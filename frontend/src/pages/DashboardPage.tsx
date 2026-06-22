@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { CategoryChart } from '../components/CategoryChart'
 import { TrendsChart } from '../components/TrendsChart'
-import { InsightCards } from '../components/InsightCards'
 import { RecurringList } from '../components/RecurringList'
 import { ReportView } from '../components/ReportView'
 import { SummaryCards } from '../components/SummaryCards'
 import { TransactionTable } from '../components/TransactionTable'
+import { WealthGoals } from '../components/WealthGoals'
+import { PortfolioAudit } from '../components/PortfolioAudit'
 import type { AnalysisResult } from '../types/finance'
 
-type Tab = 'overview' | 'transactions' | 'recurring' | 'insights' | 'report'
+type Tab = 'overview' | 'transactions' | 'recurring' | 'portfolio_audit' | 'report'
 
 export function DashboardPage() {
   const location = useLocation()
@@ -18,11 +18,11 @@ export function DashboardPage() {
 
   if (!result) {
     return (
-      <div className="rounded-xl border border-border bg-surface p-10 text-center">
-        <p className="text-foreground/70">No analysis yet. Upload a bank statement to get started.</p>
+      <div className="glass-panel rounded-xl border border-outline-variant/10 p-10 text-center mx-auto max-w-2xl mt-10">
+        <p className="text-on-surface-variant mb-4">No analysis yet. Upload a bank statement to get started.</p>
         <Link
           to="/"
-          className="mt-4 inline-block rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+          className="inline-block rounded-md bg-primary px-6 py-3 text-sm font-bold text-primary-foreground hover:bg-primary/90 transition-all shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]"
         >
           Upload statement
         </Link>
@@ -32,59 +32,95 @@ export function DashboardPage() {
 
   const tabs: { id: Tab; label: string }[] = [
     { id: 'overview', label: 'Overview' },
-    { id: 'transactions', label: 'Transactions' },
+    { id: 'transactions', label: 'Ledger' },
     { id: 'recurring', label: 'Recurring' },
-    { id: 'insights', label: 'Insights' },
+    { id: 'portfolio_audit', label: 'Portfolio Audit' },
     { id: 'report', label: 'Report' },
   ]
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-xl">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
-          <p className="text-base font-medium text-foreground break-all">{result.filename}</p>
+          <h1 className="font-serif text-[32px] font-bold text-foreground">Dashboard</h1>
+          <p className="text-sm font-medium text-on-surface-variant uppercase tracking-widest break-all">Source: {result.filename}</p>
         </div>
         <Link
           to="/"
-          className="rounded-md bg-brand-active px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition-opacity"
+          className="rounded-xl bg-primary px-6 py-2.5 text-sm font-bold text-primary-foreground hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-95"
         >
           New upload
         </Link>
       </div>
 
+      {/* Hero Stats Row */}
       <SummaryCards metrics={result.metrics} />
 
-      <nav className="flex flex-wrap space-x-4 border-b border-border">
+      {/* Tabs */}
+      <nav className="flex flex-wrap space-x-6 border-b border-outline-variant/10">
         {tabs.map((t) => (
           <button
             key={t.id}
             type="button"
             onClick={() => setTab(t.id)}
-            className={`px-3 py-2 text-sm font-medium border-b-2 -mb-[1px] transition-colors ${
+            className={`pb-3 text-sm font-bold uppercase tracking-widest transition-all relative ${
               tab === t.id
-                ? 'border-brand-active text-brand-active'
-                : 'border-transparent text-foreground-variant hover:text-foreground hover:border-border'
+                ? 'text-primary'
+                : 'text-on-surface-variant hover:text-on-surface'
             }`}
           >
             {t.label}
+            {tab === t.id && (
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary rounded-t-full shadow-[0_-2px_10px_rgba(16,185,129,0.5)]"></div>
+            )}
           </button>
         ))}
       </nav>
 
-      {tab === 'overview' && (
-        <div className="space-y-6">
-          <div className="grid gap-6 lg:grid-cols-2">
-            <CategoryChart metrics={result.metrics} />
-            <InsightCards insights={result.insights.slice(0, 3)} />
+      {/* Tab Content */}
+      <div className="pt-2">
+        {tab === 'overview' && (
+          <div className="asymmetric-grid">
+            <div className="col-span-1 md:col-span-2">
+              <TrendsChart transactions={result.transactions} />
+            </div>
+            <div className="col-span-1 flex flex-col gap-lg">
+              <WealthGoals />
+              <div className="glass-panel p-lg rounded-2xl hairline-border flex-1 flex flex-col">
+                <h4 className="text-label-sm font-bold text-on-surface-variant uppercase tracking-widest mb-4">Top Insights</h4>
+                <div className="space-y-4 overflow-y-auto custom-scrollbar flex-1 pr-2">
+                   {result.insights.slice(0, 3).map((insight, idx) => (
+                     <div key={idx} className="border-l-2 border-primary/50 pl-3 py-1">
+                       <p className="text-sm font-bold text-foreground">{insight.title}</p>
+                       <p className="text-xs text-foreground/90">{insight.body}</p>
+                     </div>
+                   ))}
+                </div>
+              </div>
+            </div>
           </div>
-          <TrendsChart transactions={result.transactions} />
-        </div>
-      )}
-      {tab === 'transactions' && <TransactionTable transactions={result.transactions} />}
-      {tab === 'recurring' && <RecurringList recurring={result.recurring} />}
-      {tab === 'insights' && <InsightCards insights={result.insights} />}
-      {tab === 'report' && <ReportView jobId={result.job_id} />}
+        )}
+        
+        {tab === 'transactions' && (
+          <div className="glass-panel rounded-2xl hairline-border overflow-hidden">
+            <TransactionTable transactions={result.transactions} />
+          </div>
+        )}
+        
+        {tab === 'recurring' && (
+          <div className="glass-panel rounded-2xl hairline-border overflow-hidden p-6">
+            <RecurringList recurring={result.recurring} />
+          </div>
+        )}
+        
+        {tab === 'portfolio_audit' && <PortfolioAudit result={result} />}
+        
+        {tab === 'report' && (
+          <div className="glass-panel rounded-2xl hairline-border overflow-hidden p-6">
+            <ReportView jobId={result.job_id} />
+          </div>
+        )}
+      </div>
     </div>
   )
 }
