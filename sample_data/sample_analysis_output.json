@@ -1,35 +1,16 @@
 {
-  "job_id": "4ab007eb-b10a-49af-8bf5-c1ed341ab741",
+  "job_id": "4315093f-d121-4fc1-8f11-7de79cc74fe9",
   "status": "completed",
   "filename": "sample_statement.csv",
-  "created_at": "2026-06-20T05:35:46.960170Z",
-  "expires_at": "2026-06-20T06:35:46.960170Z",
+  "created_at": "2026-06-22T19:25:10.001583Z",
+  "expires_at": "2026-06-22T20:25:10.001583Z",
   "transactions": [
     {
-      "id": "96823cec-95a4-416a-9354-a53683aaf1eb",
-      "date": "2025-01-01",
-      "description_raw": "NEFT CR-ACME TECH PVT LTD-SALARY JAN2025",
-      "description_clean": "ACME TECH PVT LTD SALARY JAN2025",
-      "amount": 85000.0,
-      "type": "credit",
-      "merchant": null,
-      "category": "Salary",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 1,
-        "balance": 170000.0,
-        "reference": "01/01/2025"
-      }
-    },
-    {
-      "id": "065defe5-139e-4bc0-aaa7-01ee7a55b429",
-      "date": "2025-01-02",
-      "description_raw": "UPI/SWIGGY@axl-AXIS0000456-456789012345",
-      "description_clean": "SWIGGY",
-      "amount": 292.0,
+      "id": "5976056e-ea3e-43c8-9ad5-835a10cf79c3",
+      "date": "2026-01-02",
+      "description_raw": "UPI/SWIGGY/123456789",
+      "description_clean": "SWIGGY 123456789",
+      "amount": 450.0,
       "type": "debit",
       "merchant": "SWIGGY",
       "category": "Food",
@@ -39,16 +20,54 @@
       "recurring_group_id": null,
       "metadata": {
         "source_row": 2,
-        "balance": 202404.0,
-        "reference": "02/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "1fb843fa-e33e-42fc-a51b-2537b94bd8cb",
-      "date": "2025-01-02",
-      "description_raw": "AMAZON PAY INDIA AMAZON IN",
-      "description_clean": "AMAZON PAY INDIA AMAZON IN",
-      "amount": 1648.0,
+      "id": "5b4ddfed-492d-4406-af34-7b3367e2f1c0",
+      "date": "2026-01-03",
+      "description_raw": "NEFT/SALARY/TECHCORP",
+      "description_clean": "SALARY TECHCORP",
+      "amount": 80000.0,
+      "type": "credit",
+      "merchant": null,
+      "category": "Salary",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 3,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "26c00ef9-8a0e-4b8a-a033-cb9d3791f28e",
+      "date": "2026-01-04",
+      "description_raw": "UPI/ZOMATO/987654321",
+      "description_clean": "ZOMATO 987654321",
+      "amount": 320.0,
+      "type": "debit",
+      "merchant": "ZOMATO",
+      "category": "Food",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 4,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "d2f64fe1-9289-4c0c-95ed-bfac1d085552",
+      "date": "2026-01-05",
+      "description_raw": "AMAZON PAY INDIA",
+      "description_clean": "AMAZON PAY INDIA",
+      "amount": 1500.0,
       "type": "debit",
       "merchant": "AMAZON PAY",
       "category": "Shopping",
@@ -57,226 +76,189 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 3,
-        "balance": 191135.0,
-        "reference": "02/01/2025"
-      }
-    },
-    {
-      "id": "3effaff2-976b-4571-bfb1-9cbe66eb32f5",
-      "date": "2025-01-03",
-      "description_raw": "UPI/RAHUL KUMAR/RENT MAR-YESB0YBLUPI-9876543210@ybl-Payment",
-      "description_clean": "RAHUL KUMAR RENT MAR",
-      "amount": 25000.0,
-      "type": "debit",
-      "merchant": null,
-      "category": "Rent",
-      "category_confidence": 0.85,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "7e8df78f-51bb-48fe-bb32-2cae075448ed",
-      "metadata": {
-        "source_row": 4,
-        "balance": 315000.0,
-        "reference": "03/01/2025"
-      }
-    },
-    {
-      "id": "052b86a8-c571-4659-be11-69c610352c67",
-      "date": "2025-01-03",
-      "description_raw": "UPI/SWIGGY@ybl-HDFC0001234-123456789012-Payment",
-      "description_clean": "SWIGGY",
-      "amount": 409.0,
-      "type": "debit",
-      "merchant": "SWIGGY",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
         "source_row": 5,
-        "balance": 201995.0,
-        "reference": "03/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "88d157dc-ca63-4c12-ba3e-991fa30e720a",
-      "date": "2025-01-05",
-      "description_raw": "AUTOPAY NETFLIX COM MUMBAI",
-      "description_clean": "NETFLIX COM MUMBAI",
-      "amount": 649.0,
+      "id": "55d0f6cd-d373-43f2-b208-c5263bca230d",
+      "date": "2026-01-06",
+      "description_raw": "NETFLIX SUBSCRIPTION",
+      "description_clean": "NETFLIX SUBSCRIPTION",
+      "amount": 499.0,
       "type": "debit",
       "merchant": "NETFLIX",
       "category": "Subscriptions",
       "category_confidence": 0.9,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "c8e15556-972e-4af5-ac7d-20f7b0989d77",
+      "recurring_group_id": "56d40198-0344-4b27-9cf6-44477beefc0d",
       "metadata": {
         "source_row": 6,
-        "balance": 264351.0,
-        "reference": "05/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "f18bcc1a-fd34-4d70-a512-595c00912ae1",
-      "date": "2025-01-06",
-      "description_raw": "POS DOMINOS PIZZA BANGALORE",
-      "description_clean": "DOMINOS PIZZA BANGALORE",
-      "amount": 557.0,
+      "id": "09e949ea-1a26-4836-9d5a-9394e9573caf",
+      "date": "2026-01-10",
+      "description_raw": "ATM WITHDRAWAL SBI",
+      "description_clean": "ATM WITHDRAWAL SBI",
+      "amount": 5000.0,
       "type": "debit",
-      "merchant": "DOMINOS",
-      "category": "Food",
-      "category_confidence": 0.9,
+      "merchant": null,
+      "category": "Other",
+      "category_confidence": 0.85,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
         "source_row": 7,
-        "balance": 201438.0,
-        "reference": "06/01/2025"
+        "balance": null,
+        "reference": null,
+        "source": "llm"
       }
     },
     {
-      "id": "322173df-4649-4c15-9e75-8651b8fd305d",
-      "date": "2025-01-07",
-      "description_raw": "UPI/SPOTIFY INDIA/spotify@icici-ICIC0ICICI-901234567890",
-      "description_clean": "SPOTIFY INDIA spotify",
-      "amount": 119.0,
+      "id": "d94433b5-c1c9-4a03-97d5-e56a91fe5d87",
+      "date": "2026-01-12",
+      "description_raw": "UPI/Blinkit/grocery",
+      "description_clean": "Blinkit grocery",
+      "amount": 850.0,
       "type": "debit",
-      "merchant": "SPOTIFY",
-      "category": "Subscriptions",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "ce562bc8-3a7e-402a-9bb2-c2ee7157139d",
-      "metadata": {
-        "source_row": 8,
-        "balance": 264232.0,
-        "reference": "07/01/2025"
-      }
-    },
-    {
-      "id": "46ada6c9-a5b4-43cf-88f7-556f99b571be",
-      "date": "2025-01-07",
-      "description_raw": "UPI/ZOMATO LTD/zomato@paytm-PTM0123456-987654321098",
-      "description_clean": "ZOMATO LTD zomato",
-      "amount": 459.0,
-      "type": "debit",
-      "merchant": "ZOMATO",
-      "category": "Food",
+      "merchant": null,
+      "category": "Groceries",
       "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 9,
-        "balance": 200979.0,
-        "reference": "07/01/2025"
+        "source_row": 8,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "ed008e47-f0d8-43a9-96a2-1095e15c9c91",
-      "date": "2025-01-08",
-      "description_raw": "OLA CABS BANGALORE",
-      "description_clean": "OLA CABS BANGALORE",
-      "amount": 189.0,
+      "id": "0740bbb2-b830-4241-84b0-fe5e57a8ff0c",
+      "date": "2026-01-15",
+      "description_raw": "HDFC LIFE INSURANCE EMI",
+      "description_clean": "HDFC LIFE INSURANCE EMI",
+      "amount": 2500.0,
       "type": "debit",
-      "merchant": "OLA",
-      "category": "Travel",
-      "category_confidence": 0.9,
+      "merchant": "HDFC LIFE",
+      "category": "Bills",
+      "category_confidence": 0.8,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "0f7e36e8-e5a9-40a4-8940-55804a0b2b45",
+      "recurring_group_id": "171de59a-1fce-4ffb-903e-6ac3be2a7cf3",
       "metadata": {
-        "source_row": 10,
-        "balance": 168643.0,
-        "reference": "08/01/2025"
+        "source_row": 9,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "3ba58718-ef4b-4b28-b010-2e838684b654",
-      "date": "2025-01-09",
-      "description_raw": "UPI/ZOMATO LTD/zomato@paytm-PTM0123456-987654321098",
-      "description_clean": "ZOMATO LTD zomato",
-      "amount": 539.0,
+      "id": "1553362c-b17a-4e45-81a9-5262e507394e",
+      "date": "2026-01-18",
+      "description_raw": "UBER INDIA",
+      "description_clean": "UBER INDIA",
+      "amount": 350.0,
       "type": "debit",
-      "merchant": "ZOMATO",
-      "category": "Food",
+      "merchant": "UBER",
+      "category": "Travel",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 10,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "8e1fc467-cd63-4a5e-a897-152cf235b55a",
+      "date": "2026-01-20",
+      "description_raw": "RELIANCE SMART",
+      "description_clean": "RELIANCE SMART",
+      "amount": 4200.0,
+      "type": "debit",
+      "merchant": null,
+      "category": "Groceries",
       "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
         "source_row": 11,
-        "balance": 200440.0,
-        "reference": "09/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "45a9a96b-d622-4ca6-91f3-0c48c83df7c9",
-      "date": "2025-01-10",
-      "description_raw": "EMI HDFC LOAN A/C XX1234",
-      "description_clean": "EMI HDFC LOAN A C XX1234",
-      "amount": 15000.0,
+      "id": "bc175a54-e5fc-452f-94ca-63f6a9921b85",
+      "date": "2026-01-22",
+      "description_raw": "OLA CABS",
+      "description_clean": "OLA CABS",
+      "amount": 250.0,
       "type": "debit",
-      "merchant": null,
-      "category": "EMI",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "c0c84100-91de-4c7c-932e-ec21fefada56",
-      "metadata": {
-        "source_row": 12,
-        "balance": 247696.0,
-        "reference": "10/01/2025"
-      }
-    },
-    {
-      "id": "4b71c54a-e74a-42cc-9d4c-cdf3d3035f08",
-      "date": "2025-01-11",
-      "description_raw": "IOCL FUEL STATION",
-      "description_clean": "IOCL FUEL STATION",
-      "amount": 2500.0,
-      "type": "debit",
-      "merchant": "IOCL",
+      "merchant": "OLA",
       "category": "Travel",
       "category_confidence": 0.9,
-      "is_recurring": true,
+      "is_recurring": false,
       "is_duplicate": false,
-      "recurring_group_id": "c1be269a-e654-44cc-a460-733125526265",
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 12,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "acc6dca6-8204-4ea4-a75b-5406a972ebe0",
+      "date": "2026-01-25",
+      "description_raw": "UPI/Zepto/grocery",
+      "description_clean": "Zepto grocery",
+      "amount": 600.0,
+      "type": "debit",
+      "merchant": null,
+      "category": "Groceries",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
       "metadata": {
         "source_row": 13,
-        "balance": 165898.0,
-        "reference": "11/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "1b4dc96e-ce0f-4499-82c9-03abccd351c1",
-      "date": "2025-01-12",
-      "description_raw": "SIP GROWW MUTUAL FUND CAMS",
-      "description_clean": "SIP GROWW MUTUAL FUND CAMS",
-      "amount": 5000.0,
+      "id": "c2bba8b8-24c7-4dcf-8805-10ab8c670bb9",
+      "date": "2026-01-28",
+      "description_raw": "AIRTEL POSTPAID BILL",
+      "description_clean": "AIRTEL POSTPAID BILL",
+      "amount": 899.0,
       "type": "debit",
-      "merchant": "GROWW",
-      "category": "Investments",
-      "category_confidence": 0.9,
+      "merchant": "AIRTEL",
+      "category": "Bills",
+      "category_confidence": 0.85,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "d9311561-1e05-4d57-9d1c-fc3e5c781db6",
+      "recurring_group_id": "660de84d-5386-42d8-a1dd-ea6fcd4eb4c5",
       "metadata": {
         "source_row": 14,
-        "balance": 212696.0,
-        "reference": "12/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "32356682-4bf9-4cd3-a5e3-e04360c674d4",
-      "date": "2025-01-14",
-      "description_raw": "UPI/SWIGGY@ybl-HDFC0001234-123456789012-Payment",
-      "description_clean": "SWIGGY",
-      "amount": 310.0,
+      "id": "09a37b18-4c9d-4206-aea0-b9385f5797d9",
+      "date": "2026-01-30",
+      "description_raw": "UPI/SWIGGY/11223344",
+      "description_clean": "SWIGGY 11223344",
+      "amount": 550.0,
       "type": "debit",
       "merchant": "SWIGGY",
       "category": "Food",
@@ -286,73 +268,93 @@
       "recurring_group_id": null,
       "metadata": {
         "source_row": 15,
-        "balance": 200130.0,
-        "reference": "14/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "7ce99d4b-c0a4-46aa-afaf-c604513b925a",
-      "date": "2025-01-14",
-      "description_raw": "AMZN MKTP IN*MYNTRA DESIGNS",
-      "description_clean": "AMZN MKTP IN*MYNTRA DESIGNS",
-      "amount": 2329.0,
+      "id": "d5883488-2efb-497e-98a1-f215d9d8176b",
+      "date": "2026-02-01",
+      "description_raw": "UPI/STARBUCKS/COFFEE",
+      "description_clean": "STARBUCKS COFFEE",
+      "amount": 450.0,
       "type": "debit",
-      "merchant": "AMAZON",
-      "category": "Shopping",
-      "category_confidence": 0.9,
+      "merchant": null,
+      "category": "Food",
+      "category_confidence": 0.85,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
         "source_row": 16,
-        "balance": 179134.0,
-        "reference": "14/01/2025"
+        "balance": null,
+        "reference": null,
+        "source": "llm"
       }
     },
     {
-      "id": "0c0b3dee-9b5d-4297-b1ad-bfb2f37b93f0",
-      "date": "2025-01-15",
-      "description_raw": "AMZN MKTP IN*MYNTRA DESIGNS",
-      "description_clean": "AMZN MKTP IN*MYNTRA DESIGNS",
-      "amount": 2348.0,
-      "type": "debit",
-      "merchant": "AMAZON",
-      "category": "Shopping",
+      "id": "c215531a-1f33-4ff7-84b0-1d785b42c302",
+      "date": "2026-02-02",
+      "description_raw": "NEFT/SALARY/TECHCORP",
+      "description_clean": "SALARY TECHCORP",
+      "amount": 80000.0,
+      "type": "credit",
+      "merchant": null,
+      "category": "Salary",
       "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
         "source_row": 17,
-        "balance": 169021.0,
-        "reference": "15/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "2c07a4f3-1564-456a-8c3a-51e45b77b73c",
-      "date": "2025-01-15",
-      "description_raw": "AIRTEL POSTPAID AUTOPAY",
-      "description_clean": "AIRTEL POSTPAID AUTOPAY",
-      "amount": 899.0,
+      "id": "b54d5f77-1629-47e0-b3ad-586fd5f5cb77",
+      "date": "2026-02-04",
+      "description_raw": "AMAZON RETAIL",
+      "description_clean": "AMAZON RETAIL",
+      "amount": 2100.0,
       "type": "debit",
-      "merchant": "AIRTEL",
-      "category": "Bills",
-      "category_confidence": 0.85,
-      "is_recurring": true,
+      "merchant": "AMAZON",
+      "category": "Shopping",
+      "category_confidence": 0.9,
+      "is_recurring": false,
       "is_duplicate": false,
-      "recurring_group_id": "677047cd-4571-4605-8e3f-ba23cf1ce438",
+      "recurring_group_id": null,
       "metadata": {
         "source_row": 18,
-        "balance": 160365.0,
-        "reference": "15/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "3162a4e1-29e6-48db-b6ba-c258d2dc0635",
-      "date": "2025-01-16",
-      "description_raw": "UPI/ZOMATO LTD/zomato@paytm-PTM0123456-987654321098",
-      "description_clean": "ZOMATO LTD zomato",
-      "amount": 455.0,
+      "id": "3ab0b862-12d7-4aa8-8ce2-c9174c090b13",
+      "date": "2026-02-05",
+      "description_raw": "NETFLIX SUBSCRIPTION",
+      "description_clean": "NETFLIX SUBSCRIPTION",
+      "amount": 499.0,
+      "type": "debit",
+      "merchant": "NETFLIX",
+      "category": "Subscriptions",
+      "category_confidence": 0.9,
+      "is_recurring": true,
+      "is_duplicate": false,
+      "recurring_group_id": "56d40198-0344-4b27-9cf6-44477beefc0d",
+      "metadata": {
+        "source_row": 19,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "6f5025a9-fde6-4bf7-9ab4-3982c965a777",
+      "date": "2026-02-08",
+      "description_raw": "UPI/ZOMATO/22334455",
+      "description_clean": "ZOMATO 22334455",
+      "amount": 520.0,
       "type": "debit",
       "merchant": "ZOMATO",
       "category": "Food",
@@ -361,112 +363,55 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 19,
-        "balance": 199675.0,
-        "reference": "16/01/2025"
+        "source_row": 20,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "9fc2ddcc-7a4b-4a5e-919b-7bd817fd9feb",
-      "date": "2025-01-17",
-      "description_raw": "IOCL FUEL STATION",
-      "description_clean": "IOCL FUEL STATION",
+      "id": "ac73354c-d465-4382-aa41-21944ff08a68",
+      "date": "2026-02-10",
+      "description_raw": "HDFC LIFE INSURANCE EMI",
+      "description_clean": "HDFC LIFE INSURANCE EMI",
       "amount": 2500.0,
       "type": "debit",
-      "merchant": "IOCL",
-      "category": "Travel",
-      "category_confidence": 0.9,
+      "merchant": "HDFC LIFE",
+      "category": "Bills",
+      "category_confidence": 0.8,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "c1be269a-e654-44cc-a460-733125526265",
-      "metadata": {
-        "source_row": 20,
-        "balance": 162964.0,
-        "reference": "17/01/2025"
-      }
-    },
-    {
-      "id": "e4aced79-eb4d-4aa3-b3ab-641eba12059a",
-      "date": "2025-01-20",
-      "description_raw": "UPI/SWIGGY@ybl-HDFC0001234-123456789012-Payment",
-      "description_clean": "SWIGGY",
-      "amount": 367.0,
-      "type": "debit",
-      "merchant": "SWIGGY",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
+      "recurring_group_id": "171de59a-1fce-4ffb-903e-6ac3be2a7cf3",
       "metadata": {
         "source_row": 21,
-        "balance": 199308.0,
-        "reference": "20/01/2025"
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "feeb317a-c815-4293-a1bf-ff57eee9e193",
-      "date": "2025-01-20",
-      "description_raw": "JIO PREPAID RECHARGE",
-      "description_clean": "JIO PREPAID RECHARGE",
-      "amount": 666.0,
+      "id": "619cb872-515f-406e-b290-e8a2529e1ba6",
+      "date": "2026-02-12",
+      "description_raw": "UBER INDIA",
+      "description_clean": "UBER INDIA",
+      "amount": 410.0,
       "type": "debit",
-      "merchant": "JIO",
-      "category": "Bills",
-      "category_confidence": 0.85,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "df042393-ab26-4ecb-afca-b920305797be",
-      "metadata": {
-        "source_row": 22,
-        "balance": 157901.0,
-        "reference": "20/01/2025"
-      }
-    },
-    {
-      "id": "4ac7da45-7e4c-4087-ae74-97c82caa4201",
-      "date": "2025-01-21",
-      "description_raw": "UPI/SWIGGY@axl-AXIS0000456-456789012345",
-      "description_clean": "SWIGGY",
-      "amount": 297.0,
-      "type": "debit",
-      "merchant": "SWIGGY",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 23,
-        "balance": 199011.0,
-        "reference": "21/01/2025"
-      }
-    },
-    {
-      "id": "ea2f6bc7-f1e7-4614-a3d1-f25709b2e134",
-      "date": "2025-01-22",
-      "description_raw": "IRCTC TICKET BOOKING",
-      "description_clean": "IRCTC TICKET BOOKING",
-      "amount": 1450.0,
-      "type": "debit",
-      "merchant": "IRCTC",
+      "merchant": "UBER",
       "category": "Travel",
       "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 24,
-        "balance": 161389.0,
-        "reference": "22/01/2025"
+        "source_row": 22,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "456bfe71-ba3a-42d4-9bb7-436f21784d07",
-      "date": "2025-01-25",
-      "description_raw": "UPI/RAHESH SHARMA/9876543210@paytm-P2P Transfer",
-      "description_clean": "RAHESH SHARMA P2P Transfer",
-      "amount": 2000.0,
+      "id": "722cf696-c34a-47cf-bc32-d2887fd85d46",
+      "date": "2026-02-14",
+      "description_raw": "UPI/BOOKMYSHOW/MOVIES",
+      "description_clean": "BOOKMYSHOW MOVIES",
+      "amount": 1200.0,
       "type": "debit",
       "merchant": null,
       "category": "Other",
@@ -475,320 +420,54 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 25,
-        "balance": 155235.0,
-        "reference": "25/01/2025"
+        "source_row": 23,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "964a89e1-419c-49c6-b8e8-cb9725297a9e",
-      "date": "2025-01-28",
-      "description_raw": "UPI/EATFIT/eatfit@okhdfcbank-HDFC0MERUPI-111222333444",
-      "description_clean": "EATFIT eatfit",
-      "amount": 375.0,
-      "type": "debit",
-      "merchant": "EATFIT",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 26,
-        "balance": 198636.0,
-        "reference": "28/01/2025"
-      }
-    },
-    {
-      "id": "ae75f826-168d-4caa-bfe3-84497d3507bd",
-      "date": "2025-02-01",
-      "description_raw": "NEFT CR-ACME TECH PVT LTD-SALARY JAN2025",
-      "description_clean": "ACME TECH PVT LTD SALARY JAN2025",
-      "amount": 85000.0,
-      "type": "credit",
-      "merchant": null,
-      "category": "Salary",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 27,
-        "balance": 255000.0,
-        "reference": "01/02/2025"
-      }
-    },
-    {
-      "id": "82254972-2337-4120-a555-7d348b2f3f90",
-      "date": "2025-02-03",
-      "description_raw": "UPI/RAHUL KUMAR/RENT MAR-YESB0YBLUPI-9876543210@ybl-Payment",
-      "description_clean": "RAHUL KUMAR RENT MAR",
-      "amount": 25000.0,
+      "id": "3874abfc-1355-4d30-96b4-02e3d6774246",
+      "date": "2026-02-15",
+      "description_raw": "RELIANCE SMART",
+      "description_clean": "RELIANCE SMART",
+      "amount": 3800.0,
       "type": "debit",
       "merchant": null,
-      "category": "Rent",
-      "category_confidence": 0.85,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "7e8df78f-51bb-48fe-bb32-2cae075448ed",
-      "metadata": {
-        "source_row": 28,
-        "balance": 290000.0,
-        "reference": "03/02/2025"
-      }
-    },
-    {
-      "id": "8e4deb7f-f12a-4592-ac99-9e8d38a1e1eb",
-      "date": "2025-02-03",
-      "description_raw": "UPI/FLIPKART/flipkart@ybl-YESB0YBLUPI-555666777888",
-      "description_clean": "FLIPKART flipkart",
-      "amount": 2758.0,
-      "type": "debit",
-      "merchant": "FLIPKART",
-      "category": "Shopping",
+      "category": "Groceries",
       "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 29,
-        "balance": 181463.0,
-        "reference": "03/02/2025"
+        "source_row": 24,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "338b804b-778d-441d-9f49-5cdcd23c01e9",
-      "date": "2025-02-05",
-      "description_raw": "AUTOPAY NETFLIX COM MUMBAI",
-      "description_clean": "NETFLIX COM MUMBAI",
-      "amount": 649.0,
-      "type": "debit",
-      "merchant": "NETFLIX",
-      "category": "Subscriptions",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "c8e15556-972e-4af5-ac7d-20f7b0989d77",
-      "metadata": {
-        "source_row": 30,
-        "balance": 263583.0,
-        "reference": "05/02/2025"
-      }
-    },
-    {
-      "id": "6d00b0dc-b4de-4133-b875-ed6c95ce8cc7",
-      "date": "2025-02-05",
-      "description_raw": "UPI/ZOMATO LTD/zomato@paytm-PTM0123456-987654321098",
-      "description_clean": "ZOMATO LTD zomato",
-      "amount": 474.0,
-      "type": "debit",
-      "merchant": "ZOMATO",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 31,
-        "balance": 198162.0,
-        "reference": "05/02/2025"
-      }
-    },
-    {
-      "id": "3dea9c42-c5e1-4b68-a5d9-dfaaed420366",
-      "date": "2025-02-07",
-      "description_raw": "UPI/SPOTIFY INDIA/spotify@icici-ICIC0ICICI-901234567890",
-      "description_clean": "SPOTIFY INDIA spotify",
-      "amount": 119.0,
-      "type": "debit",
-      "merchant": "SPOTIFY",
-      "category": "Subscriptions",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "ce562bc8-3a7e-402a-9bb2-c2ee7157139d",
-      "metadata": {
-        "source_row": 32,
-        "balance": 263464.0,
-        "reference": "07/02/2025"
-      }
-    },
-    {
-      "id": "e7e62c04-0eb7-49a5-aaf5-e95d49eaa87c",
-      "date": "2025-02-07",
-      "description_raw": "UPI/AMAZON INDIA/amazon@rapl-UTIB0000123-998877665544",
-      "description_clean": "AMAZON INDIA amazon",
-      "amount": 879.0,
-      "type": "debit",
-      "merchant": "AMAZON",
-      "category": "Shopping",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 33,
-        "balance": 186008.0,
-        "reference": "07/02/2025"
-      }
-    },
-    {
-      "id": "72f11af2-d243-4665-a051-a00c09244400",
-      "date": "2025-02-08",
-      "description_raw": "ATM WDL NFS SBI BANGALORE",
-      "description_clean": "ATM WDL NFS SBI BANGALORE",
-      "amount": 5000.0,
-      "type": "debit",
-      "merchant": "ATM WITHDRAWAL",
-      "category": "Other",
-      "category_confidence": 0.7,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 34,
-        "balance": 150235.0,
-        "reference": "08/02/2025"
-      }
-    },
-    {
-      "id": "6126736c-07bb-430f-8e6c-e53e0c3e100c",
-      "date": "2025-02-09",
-      "description_raw": "OLA CABS BANGALORE",
-      "description_clean": "OLA CABS BANGALORE",
-      "amount": 189.0,
+      "id": "8600d11b-0432-4f79-bdc6-c7c804b577c2",
+      "date": "2026-02-18",
+      "description_raw": "OLA CABS",
+      "description_clean": "OLA CABS",
+      "amount": 320.0,
       "type": "debit",
       "merchant": "OLA",
       "category": "Travel",
       "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "0f7e36e8-e5a9-40a4-8940-55804a0b2b45",
-      "metadata": {
-        "source_row": 35,
-        "balance": 168832.0,
-        "reference": "09/02/2025"
-      }
-    },
-    {
-      "id": "ac110dfb-4333-4a18-8f72-0bdf90241cc6",
-      "date": "2025-02-10",
-      "description_raw": "EMI HDFC LOAN A/C XX1234",
-      "description_clean": "EMI HDFC LOAN A C XX1234",
-      "amount": 15000.0,
-      "type": "debit",
-      "merchant": null,
-      "category": "EMI",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "c0c84100-91de-4c7c-932e-ec21fefada56",
-      "metadata": {
-        "source_row": 36,
-        "balance": 232696.0,
-        "reference": "10/02/2025"
-      }
-    },
-    {
-      "id": "8351950a-8ba2-48c2-9282-cf9aad102756",
-      "date": "2025-02-11",
-      "description_raw": "POS DOMINOS PIZZA BANGALORE",
-      "description_clean": "DOMINOS PIZZA BANGALORE",
-      "amount": 642.0,
-      "type": "debit",
-      "merchant": "DOMINOS",
-      "category": "Food",
-      "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 37,
-        "balance": 197520.0,
-        "reference": "11/02/2025"
+        "source_row": 25,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "3b205ca2-e16f-4483-954b-1427cfc2df5b",
-      "date": "2025-02-11",
-      "description_raw": "UPI/AMAZON INDIA/amazon@rapl-UTIB0000123-998877665544",
-      "description_clean": "AMAZON INDIA amazon",
-      "amount": 808.0,
-      "type": "debit",
-      "merchant": "AMAZON",
-      "category": "Shopping",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 38,
-        "balance": 171369.0,
-        "reference": "11/02/2025"
-      }
-    },
-    {
-      "id": "a76c5012-1d16-476c-958b-210850a44e7c",
-      "date": "2025-02-12",
-      "description_raw": "SIP GROWW MUTUAL FUND CAMS",
-      "description_clean": "SIP GROWW MUTUAL FUND CAMS",
-      "amount": 5000.0,
-      "type": "debit",
-      "merchant": "GROWW",
-      "category": "Investments",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "d9311561-1e05-4d57-9d1c-fc3e5c781db6",
-      "metadata": {
-        "source_row": 39,
-        "balance": 207696.0,
-        "reference": "12/02/2025"
-      }
-    },
-    {
-      "id": "543b2865-fdd2-4fcc-94e4-7484d1779ccc",
-      "date": "2025-02-12",
-      "description_raw": "UPI/SWIGGY@axl-AXIS0000456-456789012345",
-      "description_clean": "SWIGGY",
-      "amount": 283.0,
-      "type": "debit",
-      "merchant": "SWIGGY",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 40,
-        "balance": 197237.0,
-        "reference": "12/02/2025"
-      }
-    },
-    {
-      "id": "8f837d25-4da5-4b05-8cd3-9f79da15f557",
-      "date": "2025-02-14",
-      "description_raw": "CASHBACK CREDIT PROMO",
-      "description_clean": "CASHBACK CREDIT PROMO",
-      "amount": 50.0,
-      "type": "credit",
-      "merchant": null,
-      "category": "Other",
-      "category_confidence": 0.3,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 41,
-        "balance": 150285.0,
-        "reference": "14/02/2025"
-      }
-    },
-    {
-      "id": "5152afbc-eda6-4e04-8b29-98c97a498241",
-      "date": "2025-02-15",
-      "description_raw": "AIRTEL POSTPAID AUTOPAY",
-      "description_clean": "AIRTEL POSTPAID AUTOPAY",
+      "id": "6593f8a3-afdf-4103-a0ac-85aec972343e",
+      "date": "2026-02-20",
+      "description_raw": "AIRTEL POSTPAID BILL",
+      "description_clean": "AIRTEL POSTPAID BILL",
       "amount": 899.0,
       "type": "debit",
       "merchant": "AIRTEL",
@@ -796,19 +475,38 @@
       "category_confidence": 0.85,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "677047cd-4571-4605-8e3f-ba23cf1ce438",
+      "recurring_group_id": "660de84d-5386-42d8-a1dd-ea6fcd4eb4c5",
       "metadata": {
-        "source_row": 42,
-        "balance": 159466.0,
-        "reference": "15/02/2025"
+        "source_row": 26,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "fb584536-3cdc-4183-860c-57920364d9e8",
-      "date": "2025-02-17",
-      "description_raw": "UPI/FLIPKART/flipkart@ybl-YESB0YBLUPI-555666777888",
-      "description_clean": "FLIPKART flipkart",
-      "amount": 2775.0,
+      "id": "61dfb065-3f7e-4a5c-8371-ee91741c664a",
+      "date": "2026-02-22",
+      "description_raw": "UPI/MAKE MY TRIP/FLIGHT",
+      "description_clean": "MAKE MY TRIP FLIGHT",
+      "amount": 6500.0,
+      "type": "debit",
+      "merchant": null,
+      "category": "Travel",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 27,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "736cb5be-23f3-4a16-9aeb-ed11c53dc56b",
+      "date": "2026-02-25",
+      "description_raw": "FLIPKART INTERNET",
+      "description_clean": "FLIPKART INTERNET",
+      "amount": 1850.0,
       "type": "debit",
       "merchant": "FLIPKART",
       "category": "Shopping",
@@ -817,17 +515,17 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 43,
-        "balance": 173782.0,
-        "reference": "17/02/2025"
+        "source_row": 28,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "689877f4-31d8-4796-988e-3045991af2dd",
-      "date": "2025-02-18",
-      "description_raw": "UPI/ZOMATO LTD/zomato@paytm-PTM0123456-987654321098",
-      "description_clean": "ZOMATO LTD zomato",
-      "amount": 536.0,
+      "id": "6352a989-f089-472a-ab31-2a5b9fd8dcc4",
+      "date": "2026-02-28",
+      "description_raw": "UPI/ZOMATO/55667788",
+      "description_clean": "ZOMATO 55667788",
+      "amount": 480.0,
       "type": "debit",
       "merchant": "ZOMATO",
       "category": "Food",
@@ -836,74 +534,17 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 44,
-        "balance": 196701.0,
-        "reference": "18/02/2025"
+        "source_row": 29,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "1f23a9d7-072f-4544-a236-200767ded6fe",
-      "date": "2025-02-20",
-      "description_raw": "POS DOMINOS PIZZA BANGALORE",
-      "description_clean": "DOMINOS PIZZA BANGALORE",
-      "amount": 618.0,
-      "type": "debit",
-      "merchant": "DOMINOS",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 45,
-        "balance": 196083.0,
-        "reference": "20/02/2025"
-      }
-    },
-    {
-      "id": "132121af-7db0-4c88-85df-632ad3125c0a",
-      "date": "2025-02-20",
-      "description_raw": "JIO PREPAID RECHARGE",
-      "description_clean": "JIO PREPAID RECHARGE",
-      "amount": 666.0,
-      "type": "debit",
-      "merchant": "JIO",
-      "category": "Bills",
-      "category_confidence": 0.85,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "df042393-ab26-4ecb-afca-b920305797be",
-      "metadata": {
-        "source_row": 46,
-        "balance": 157235.0,
-        "reference": "20/02/2025"
-      }
-    },
-    {
-      "id": "461c0be5-b138-4aa6-8244-e098c4ddbca8",
-      "date": "2025-02-28",
-      "description_raw": "AMAZON PAY INDIA AMAZON IN",
-      "description_clean": "AMAZON PAY INDIA AMAZON IN",
-      "amount": 1787.0,
-      "type": "debit",
-      "merchant": "AMAZON PAY",
-      "category": "Shopping",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 47,
-        "balance": 184221.0,
-        "reference": "28/02/2025"
-      }
-    },
-    {
-      "id": "ad1867d2-a6a5-44a3-842e-d3ca0fecebfe",
-      "date": "2025-03-01",
-      "description_raw": "NEFT CR-ACME TECH PVT LTD-SALARY JAN2025",
-      "description_clean": "ACME TECH PVT LTD SALARY JAN2025",
-      "amount": 85000.0,
+      "id": "54bcbe80-21a6-4d7c-a926-cf7198227541",
+      "date": "2026-03-02",
+      "description_raw": "NEFT/SALARY/TECHCORP",
+      "description_clean": "SALARY TECHCORP",
+      "amount": 80000.0,
       "type": "credit",
       "merchant": null,
       "category": "Salary",
@@ -912,54 +553,16 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 48,
-        "balance": 340000.0,
-        "reference": "01/03/2025"
+        "source_row": 30,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "d1941f1f-326e-4717-80b6-e3dae8cb65ec",
-      "date": "2025-03-02",
-      "description_raw": "FASTAG NPCI NETC TOLL",
-      "description_clean": "FASTAG NPCI NETC TOLL",
-      "amount": 125.0,
-      "type": "debit",
-      "merchant": "FASTAG",
-      "category": "Travel",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "fe6403e9-1eab-449f-9851-63fdd5930f26",
-      "metadata": {
-        "source_row": 49,
-        "balance": 162839.0,
-        "reference": "02/03/2025"
-      }
-    },
-    {
-      "id": "21e11465-8bcb-43db-b521-dfb5ec0d1e77",
-      "date": "2025-03-03",
-      "description_raw": "UPI/RAHUL KUMAR/RENT MAR-YESB0YBLUPI-9876543210@ybl-Payment",
-      "description_clean": "RAHUL KUMAR RENT MAR",
-      "amount": 25000.0,
-      "type": "debit",
-      "merchant": null,
-      "category": "Rent",
-      "category_confidence": 0.85,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "7e8df78f-51bb-48fe-bb32-2cae075448ed",
-      "metadata": {
-        "source_row": 50,
-        "balance": 265000.0,
-        "reference": "03/03/2025"
-      }
-    },
-    {
-      "id": "3b9433f8-d4f2-4ccd-bd6c-71d90753a47a",
-      "date": "2025-03-03",
-      "description_raw": "UPI/SWIGGY@ybl-HDFC0001234-123456789012-Payment",
-      "description_clean": "SWIGGY",
+      "id": "f9469855-83fe-4a01-a0d3-2fa1b4ca7cc1",
+      "date": "2026-03-03",
+      "description_raw": "UPI/SWIGGY/99887766",
+      "description_clean": "SWIGGY 99887766",
       "amount": 350.0,
       "type": "debit",
       "merchant": "SWIGGY",
@@ -969,131 +572,36 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 51,
-        "balance": 195733.0,
-        "reference": "03/03/2025"
+        "source_row": 31,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "ddfded2f-8b53-4da2-b970-6d1482c14d01",
-      "date": "2025-03-04",
-      "description_raw": "UBER INDIA RIDE MUMBAI",
-      "description_clean": "UBER INDIA RIDE MUMBAI",
-      "amount": 245.0,
-      "type": "debit",
-      "merchant": "UBER",
-      "category": "Travel",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 52,
-        "balance": 165653.0,
-        "reference": "04/03/2025"
-      }
-    },
-    {
-      "id": "7eef2c57-06b6-4ac0-8bf1-2c1dcfb1a21f",
-      "date": "2025-03-05",
-      "description_raw": "AUTOPAY NETFLIX COM MUMBAI",
-      "description_clean": "NETFLIX COM MUMBAI",
-      "amount": 649.0,
+      "id": "70fdccc2-a838-4bda-80b9-da9ce8056825",
+      "date": "2026-03-05",
+      "description_raw": "NETFLIX SUBSCRIPTION",
+      "description_clean": "NETFLIX SUBSCRIPTION",
+      "amount": 499.0,
       "type": "debit",
       "merchant": "NETFLIX",
       "category": "Subscriptions",
       "category_confidence": 0.9,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "c8e15556-972e-4af5-ac7d-20f7b0989d77",
+      "recurring_group_id": "56d40198-0344-4b27-9cf6-44477beefc0d",
       "metadata": {
-        "source_row": 53,
-        "balance": 262815.0,
-        "reference": "05/03/2025"
+        "source_row": 32,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "b5c34bc3-2ecc-4404-ae8b-9818cd20bac1",
-      "date": "2025-03-05",
-      "description_raw": "UPI/EATFIT/eatfit@okhdfcbank-HDFC0MERUPI-111222333444",
-      "description_clean": "EATFIT eatfit",
-      "amount": 380.0,
-      "type": "debit",
-      "merchant": "EATFIT",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 54,
-        "balance": 195353.0,
-        "reference": "05/03/2025"
-      }
-    },
-    {
-      "id": "fce3f4d5-d30c-4150-9ef5-6a8a2a4c53aa",
-      "date": "2025-03-05",
-      "description_raw": "UPI/UNKNOWN SHOP 12345@ybl",
-      "description_clean": "UNKNOWN SHOP 12345",
-      "amount": 150.0,
-      "type": "debit",
-      "merchant": null,
-      "category": "Other",
-      "category_confidence": 0.0,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 55,
-        "balance": 150135.0,
-        "reference": "05/03/2025"
-      }
-    },
-    {
-      "id": "c48e9745-76d0-4aaa-baee-fd6c44368d30",
-      "date": "2025-03-06",
-      "description_raw": "POS DOMINOS PIZZA BANGALORE",
-      "description_clean": "DOMINOS PIZZA BANGALORE",
-      "amount": 650.0,
-      "type": "debit",
-      "merchant": "DOMINOS",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 56,
-        "balance": 194703.0,
-        "reference": "06/03/2025"
-      }
-    },
-    {
-      "id": "f9ef66cf-f608-4e70-8a16-61475761e10d",
-      "date": "2025-03-07",
-      "description_raw": "UPI/SPOTIFY INDIA/spotify@icici-ICIC0ICICI-901234567890",
-      "description_clean": "SPOTIFY INDIA spotify",
-      "amount": 119.0,
-      "type": "debit",
-      "merchant": "SPOTIFY",
-      "category": "Subscriptions",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "ce562bc8-3a7e-402a-9bb2-c2ee7157139d",
-      "metadata": {
-        "source_row": 57,
-        "balance": 262696.0,
-        "reference": "07/03/2025"
-      }
-    },
-    {
-      "id": "cb6d5ba8-8943-4783-bf4c-0ef896cff53c",
-      "date": "2025-03-09",
-      "description_raw": "AMAZON PAY INDIA AMAZON IN",
-      "description_clean": "AMAZON PAY INDIA AMAZON IN",
-      "amount": 1605.0,
+      "id": "a0daf393-2c31-433c-a7fd-5c5b51c96b6b",
+      "date": "2026-03-06",
+      "description_raw": "AMAZON PAY INDIA",
+      "description_clean": "AMAZON PAY INDIA",
+      "amount": 999.0,
       "type": "debit",
       "merchant": "AMAZON PAY",
       "category": "Shopping",
@@ -1102,131 +610,74 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 58,
-        "balance": 172177.0,
-        "reference": "09/03/2025"
+        "source_row": 33,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "744729e9-453c-40b0-a604-6b7e901848bf",
-      "date": "2025-03-09",
-      "description_raw": "FASTAG NPCI NETC TOLL",
-      "description_clean": "FASTAG NPCI NETC TOLL",
-      "amount": 125.0,
+      "id": "31494af0-145f-43fd-bd80-44c704a1497b",
+      "date": "2026-03-10",
+      "description_raw": "HDFC LIFE INSURANCE EMI",
+      "description_clean": "HDFC LIFE INSURANCE EMI",
+      "amount": 2500.0,
       "type": "debit",
-      "merchant": "FASTAG",
-      "category": "Travel",
-      "category_confidence": 0.9,
+      "merchant": "HDFC LIFE",
+      "category": "Bills",
+      "category_confidence": 0.8,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "fe6403e9-1eab-449f-9851-63fdd5930f26",
+      "recurring_group_id": "171de59a-1fce-4ffb-903e-6ac3be2a7cf3",
       "metadata": {
-        "source_row": 59,
-        "balance": 161264.0,
-        "reference": "09/03/2025"
+        "source_row": 34,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "c1ede779-d9cb-4347-92ea-d6116aaa3868",
-      "date": "2025-03-10",
-      "description_raw": "EMI HDFC LOAN A/C XX1234",
-      "description_clean": "EMI HDFC LOAN A C XX1234",
-      "amount": 15000.0,
+      "id": "5b2a99dd-bd0f-4bb7-af05-a468c2a27168",
+      "date": "2026-03-12",
+      "description_raw": "UPI/Blinkit/grocery",
+      "description_clean": "Blinkit grocery",
+      "amount": 1100.0,
       "type": "debit",
       "merchant": null,
-      "category": "EMI",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "c0c84100-91de-4c7c-932e-ec21fefada56",
-      "metadata": {
-        "source_row": 60,
-        "balance": 217696.0,
-        "reference": "10/03/2025"
-      }
-    },
-    {
-      "id": "3d4da418-505d-4058-b5ea-7245ba4c0194",
-      "date": "2025-03-10",
-      "description_raw": "AMZN MKTP IN*MYNTRA DESIGNS",
-      "description_clean": "AMZN MKTP IN*MYNTRA DESIGNS",
-      "amount": 2292.0,
-      "type": "debit",
-      "merchant": "AMAZON",
-      "category": "Shopping",
+      "category": "Groceries",
       "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 61,
-        "balance": 188843.0,
-        "reference": "10/03/2025"
+        "source_row": 35,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "fb5f9089-7a35-4e43-82cf-0554599e82aa",
-      "date": "2025-03-10",
-      "description_raw": "OLA CABS BANGALORE",
-      "description_clean": "OLA CABS BANGALORE",
-      "amount": 189.0,
+      "id": "c1a41e5c-bfe5-4279-97c0-03253ba6132e",
+      "date": "2026-03-15",
+      "description_raw": "RELIANCE SMART",
+      "description_clean": "RELIANCE SMART",
+      "amount": 4500.0,
       "type": "debit",
-      "merchant": "OLA",
-      "category": "Travel",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "0f7e36e8-e5a9-40a4-8940-55804a0b2b45",
-      "metadata": {
-        "source_row": 62,
-        "balance": 165464.0,
-        "reference": "10/03/2025"
-      }
-    },
-    {
-      "id": "6ff28be8-fb98-496d-83ae-644f5681a6db",
-      "date": "2025-03-11",
-      "description_raw": "UPI/ZOMATO LTD/zomato@paytm-PTM0123456-987654321098",
-      "description_clean": "ZOMATO LTD zomato",
-      "amount": 463.0,
-      "type": "debit",
-      "merchant": "ZOMATO",
-      "category": "Food",
+      "merchant": null,
+      "category": "Groceries",
       "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 63,
-        "balance": 194240.0,
-        "reference": "11/03/2025"
+        "source_row": 36,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "d5c15e0b-8e07-4492-b6e4-6ed01c534dc8",
-      "date": "2025-03-12",
-      "description_raw": "SIP GROWW MUTUAL FUND CAMS",
-      "description_clean": "SIP GROWW MUTUAL FUND CAMS",
-      "amount": 5000.0,
-      "type": "debit",
-      "merchant": "GROWW",
-      "category": "Investments",
-      "category_confidence": 0.9,
-      "is_recurring": true,
-      "is_duplicate": false,
-      "recurring_group_id": "d9311561-1e05-4d57-9d1c-fc3e5c781db6",
-      "metadata": {
-        "source_row": 64,
-        "balance": 202696.0,
-        "reference": "12/03/2025"
-      }
-    },
-    {
-      "id": "e781752b-51be-42bd-b9e9-6ead6fea716c",
-      "date": "2025-03-14",
-      "description_raw": "UBER INDIA RIDE MUMBAI",
-      "description_clean": "UBER INDIA RIDE MUMBAI",
-      "amount": 245.0,
+      "id": "d9816c33-9540-4ff0-ba14-d900c9deea51",
+      "date": "2026-03-18",
+      "description_raw": "UBER INDIA",
+      "description_clean": "UBER INDIA",
+      "amount": 280.0,
       "type": "debit",
       "merchant": "UBER",
       "category": "Travel",
@@ -1235,16 +686,16 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 65,
-        "balance": 168398.0,
-        "reference": "14/03/2025"
+        "source_row": 37,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "76bd77c9-1360-4620-b553-e9beef4eb1e8",
-      "date": "2025-03-15",
-      "description_raw": "AIRTEL POSTPAID AUTOPAY",
-      "description_clean": "AIRTEL POSTPAID AUTOPAY",
+      "id": "3015dabc-91b6-4dd8-a6fa-df8b4c202d72",
+      "date": "2026-03-20",
+      "description_raw": "AIRTEL POSTPAID BILL",
+      "description_clean": "AIRTEL POSTPAID BILL",
       "amount": 899.0,
       "type": "debit",
       "merchant": "AIRTEL",
@@ -1252,19 +703,95 @@
       "category_confidence": 0.85,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "677047cd-4571-4605-8e3f-ba23cf1ce438",
+      "recurring_group_id": "660de84d-5386-42d8-a1dd-ea6fcd4eb4c5",
       "metadata": {
-        "source_row": 66,
-        "balance": 158567.0,
-        "reference": "15/03/2025"
+        "source_row": 38,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "f2bdc5e3-9d86-4e5b-bbd5-c67ba948f9df",
-      "date": "2025-03-18",
-      "description_raw": "NEFT CR-FREELANCE CLIENT-PROJECT PAYMENT",
-      "description_clean": "FREELANCE CLIENT PROJECT PAYMENT",
-      "amount": 15000.0,
+      "id": "9b4c1906-1cac-4179-bdc7-b792d4528c75",
+      "date": "2026-03-22",
+      "description_raw": "UPI/IRCTC/TRAIN",
+      "description_clean": "IRCTC TRAIN",
+      "amount": 1500.0,
+      "type": "debit",
+      "merchant": "IRCTC",
+      "category": "Travel",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 39,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "5fe1c0a9-ff64-41d3-84d2-93427beaa1e1",
+      "date": "2026-03-25",
+      "description_raw": "OLA CABS",
+      "description_clean": "OLA CABS",
+      "amount": 450.0,
+      "type": "debit",
+      "merchant": "OLA",
+      "category": "Travel",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 40,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "2d323064-1a77-4f7a-b693-5101616c9fbe",
+      "date": "2026-03-28",
+      "description_raw": "UPI/Zepto/grocery",
+      "description_clean": "Zepto grocery",
+      "amount": 700.0,
+      "type": "debit",
+      "merchant": null,
+      "category": "Groceries",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 41,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "9c3914a9-754d-4b4d-8a3e-a1de478b8b39",
+      "date": "2026-03-30",
+      "description_raw": "UPI/SWIGGY/11223355",
+      "description_clean": "SWIGGY 11223355",
+      "amount": 620.0,
+      "type": "debit",
+      "merchant": "SWIGGY",
+      "category": "Food",
+      "category_confidence": 0.9,
+      "is_recurring": false,
+      "is_duplicate": false,
+      "recurring_group_id": null,
+      "metadata": {
+        "source_row": 42,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "b4122d9d-10fe-49b7-a382-226c7c571398",
+      "date": "2026-04-02",
+      "description_raw": "NEFT/SALARY/TECHCORP",
+      "description_clean": "SALARY TECHCORP",
+      "amount": 80000.0,
       "type": "credit",
       "merchant": null,
       "category": "Salary",
@@ -1273,214 +800,123 @@
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 67,
-        "balance": 165135.0,
-        "reference": "18/03/2025"
+        "source_row": 43,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "c348a57b-e625-42be-a424-ba410a2b01aa",
-      "date": "2025-03-19",
-      "description_raw": "UPI/ZOMATO LTD/zomato@paytm-PTM0123456-987654321098",
-      "description_clean": "ZOMATO LTD zomato",
-      "amount": 530.0,
+      "id": "425f9ce2-b7e7-4bb5-a570-7bcf00a0351c",
+      "date": "2026-04-05",
+      "description_raw": "NETFLIX SUBSCRIPTION",
+      "description_clean": "NETFLIX SUBSCRIPTION",
+      "amount": 499.0,
       "type": "debit",
-      "merchant": "ZOMATO",
-      "category": "Food",
+      "merchant": "NETFLIX",
+      "category": "Subscriptions",
+      "category_confidence": 0.9,
+      "is_recurring": true,
+      "is_duplicate": false,
+      "recurring_group_id": "56d40198-0344-4b27-9cf6-44477beefc0d",
+      "metadata": {
+        "source_row": 44,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "ef33dfc3-2331-4457-9260-948d4aaa3cf7",
+      "date": "2026-04-10",
+      "description_raw": "HDFC LIFE INSURANCE EMI",
+      "description_clean": "HDFC LIFE INSURANCE EMI",
+      "amount": 2500.0,
+      "type": "debit",
+      "merchant": "HDFC LIFE",
+      "category": "Bills",
+      "category_confidence": 0.8,
+      "is_recurring": true,
+      "is_duplicate": false,
+      "recurring_group_id": "171de59a-1fce-4ffb-903e-6ac3be2a7cf3",
+      "metadata": {
+        "source_row": 45,
+        "balance": null,
+        "reference": null
+      }
+    },
+    {
+      "id": "4706d480-78dc-4fe7-8775-c60a207fae71",
+      "date": "2026-04-15",
+      "description_raw": "RELIANCE SMART",
+      "description_clean": "RELIANCE SMART",
+      "amount": 3900.0,
+      "type": "debit",
+      "merchant": null,
+      "category": "Groceries",
       "category_confidence": 0.9,
       "is_recurring": false,
       "is_duplicate": false,
       "recurring_group_id": null,
       "metadata": {
-        "source_row": 68,
-        "balance": 193710.0,
-        "reference": "19/03/2025"
+        "source_row": 46,
+        "balance": null,
+        "reference": null
       }
     },
     {
-      "id": "fe05f262-ceed-405f-a040-723b57cfb447",
-      "date": "2025-03-23",
-      "description_raw": "UPI/FLIPKART/flipkart@ybl-YESB0YBLUPI-555666777888",
-      "description_clean": "FLIPKART flipkart",
-      "amount": 2577.0,
+      "id": "82f7a605-e63e-4ef2-a495-df7a386ef4f7",
+      "date": "2026-04-20",
+      "description_raw": "AIRTEL POSTPAID BILL",
+      "description_clean": "AIRTEL POSTPAID BILL",
+      "amount": 899.0,
       "type": "debit",
-      "merchant": "FLIPKART",
-      "category": "Shopping",
-      "category_confidence": 0.9,
-      "is_recurring": false,
+      "merchant": "AIRTEL",
+      "category": "Bills",
+      "category_confidence": 0.85,
+      "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": null,
+      "recurring_group_id": "660de84d-5386-42d8-a1dd-ea6fcd4eb4c5",
       "metadata": {
-        "source_row": 69,
-        "balance": 176557.0,
-        "reference": "23/03/2025"
-      }
-    },
-    {
-      "id": "75f0ec2d-5332-4b09-876d-6fb52ec8a328",
-      "date": "2025-03-24",
-      "description_raw": "AMZN MKTP IN*MYNTRA DESIGNS",
-      "description_clean": "AMZN MKTP IN*MYNTRA DESIGNS",
-      "amount": 1956.0,
-      "type": "debit",
-      "merchant": "AMAZON",
-      "category": "Shopping",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 70,
-        "balance": 186887.0,
-        "reference": "24/03/2025"
-      }
-    },
-    {
-      "id": "b42e24b7-20a7-47d4-a945-f39999ea0925",
-      "date": "2025-03-25",
-      "description_raw": "UPI/ZOMATO LTD/zomato@paytm-PTM0123456-987654321098",
-      "description_clean": "ZOMATO LTD zomato",
-      "amount": 508.0,
-      "type": "debit",
-      "merchant": "ZOMATO",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 71,
-        "balance": 193202.0,
-        "reference": "25/03/2025"
-      }
-    },
-    {
-      "id": "e09457de-4064-47da-b1aa-d08291d66ffb",
-      "date": "2025-03-27",
-      "description_raw": "UPI/EATFIT/eatfit@okhdfcbank-HDFC0MERUPI-111222333444",
-      "description_clean": "EATFIT eatfit",
-      "amount": 419.0,
-      "type": "debit",
-      "merchant": "EATFIT",
-      "category": "Food",
-      "category_confidence": 0.9,
-      "is_recurring": false,
-      "is_duplicate": false,
-      "recurring_group_id": null,
-      "metadata": {
-        "source_row": 72,
-        "balance": 192783.0,
-        "reference": "27/03/2025"
+        "source_row": 47,
+        "balance": null,
+        "reference": null
       }
     }
   ],
   "recurring": [
     {
-      "id": "7e8df78f-51bb-48fe-bb32-2cae075448ed",
-      "label": "Rent payment",
-      "category": "Rent",
-      "type": "rent",
-      "amount": 25000.0,
-      "frequency": "monthly",
-      "monthly_estimate": 25000.0,
-      "transaction_ids": [
-        "3effaff2-976b-4571-bfb1-9cbe66eb32f5",
-        "82254972-2337-4120-a555-7d348b2f3f90",
-        "21e11465-8bcb-43db-b521-dfb5ec0d1e77"
-      ],
-      "next_expected_date": "2025-04-02"
-    },
-    {
-      "id": "c8e15556-972e-4af5-ac7d-20f7b0989d77",
+      "id": "56d40198-0344-4b27-9cf6-44477beefc0d",
       "label": "NETFLIX",
       "category": "Subscriptions",
       "type": "subscription",
-      "amount": 649.0,
+      "amount": 499.0,
       "frequency": "monthly",
-      "monthly_estimate": 649.0,
+      "monthly_estimate": 499.0,
       "transaction_ids": [
-        "88d157dc-ca63-4c12-ba3e-991fa30e720a",
-        "338b804b-778d-441d-9f49-5cdcd23c01e9",
-        "7eef2c57-06b6-4ac0-8bf1-2c1dcfb1a21f"
+        "55d0f6cd-d373-43f2-b208-c5263bca230d",
+        "3ab0b862-12d7-4aa8-8ce2-c9174c090b13",
+        "70fdccc2-a838-4bda-80b9-da9ce8056825",
+        "425f9ce2-b7e7-4bb5-a570-7bcf00a0351c"
       ],
-      "next_expected_date": "2025-04-04"
+      "next_expected_date": "2026-05-05"
     },
     {
-      "id": "ce562bc8-3a7e-402a-9bb2-c2ee7157139d",
-      "label": "SPOTIFY",
-      "category": "Subscriptions",
-      "type": "subscription",
-      "amount": 119.0,
-      "frequency": "monthly",
-      "monthly_estimate": 119.0,
-      "transaction_ids": [
-        "322173df-4649-4c15-9e75-8651b8fd305d",
-        "3dea9c42-c5e1-4b68-a5d9-dfaaed420366",
-        "f9ef66cf-f608-4e70-8a16-61475761e10d"
-      ],
-      "next_expected_date": "2025-04-06"
-    },
-    {
-      "id": "0f7e36e8-e5a9-40a4-8940-55804a0b2b45",
-      "label": "OLA",
-      "category": "Travel",
-      "type": "other",
-      "amount": 189.0,
-      "frequency": "monthly",
-      "monthly_estimate": 189.0,
-      "transaction_ids": [
-        "ed008e47-f0d8-43a9-96a2-1095e15c9c91",
-        "6126736c-07bb-430f-8e6c-e53e0c3e100c",
-        "fb5f9089-7a35-4e43-82cf-0554599e82aa"
-      ],
-      "next_expected_date": "2025-04-09"
-    },
-    {
-      "id": "c0c84100-91de-4c7c-932e-ec21fefada56",
-      "label": "EMI payment",
-      "category": "EMI",
+      "id": "171de59a-1fce-4ffb-903e-6ac3be2a7cf3",
+      "label": "HDFC LIFE",
+      "category": "Bills",
       "type": "emi",
-      "amount": 15000.0,
-      "frequency": "monthly",
-      "monthly_estimate": 15000.0,
-      "transaction_ids": [
-        "45a9a96b-d622-4ca6-91f3-0c48c83df7c9",
-        "ac110dfb-4333-4a18-8f72-0bdf90241cc6",
-        "c1ede779-d9cb-4347-92ea-d6116aaa3868"
-      ],
-      "next_expected_date": "2025-04-09"
-    },
-    {
-      "id": "c1be269a-e654-44cc-a460-733125526265",
-      "label": "IOCL",
-      "category": "Travel",
-      "type": "other",
       "amount": 2500.0,
-      "frequency": "weekly",
-      "monthly_estimate": 10825.0,
-      "transaction_ids": [
-        "4b71c54a-e74a-42cc-9d4c-cdf3d3035f08",
-        "9fc2ddcc-7a4b-4a5e-919b-7bd817fd9feb"
-      ],
-      "next_expected_date": "2025-01-23"
-    },
-    {
-      "id": "d9311561-1e05-4d57-9d1c-fc3e5c781db6",
-      "label": "GROWW",
-      "category": "Investments",
-      "type": "sip",
-      "amount": 5000.0,
       "frequency": "monthly",
-      "monthly_estimate": 5000.0,
+      "monthly_estimate": 2500.0,
       "transaction_ids": [
-        "1b4dc96e-ce0f-4499-82c9-03abccd351c1",
-        "a76c5012-1d16-476c-958b-210850a44e7c",
-        "d5c15e0b-8e07-4492-b6e4-6ed01c534dc8"
+        "0740bbb2-b830-4241-84b0-fe5e57a8ff0c",
+        "ac73354c-d465-4382-aa41-21944ff08a68",
+        "31494af0-145f-43fd-bd80-44c704a1497b",
+        "ef33dfc3-2331-4457-9260-948d4aaa3cf7"
       ],
-      "next_expected_date": "2025-04-11"
+      "next_expected_date": "2026-05-08"
     },
     {
-      "id": "677047cd-4571-4605-8e3f-ba23cf1ce438",
+      "id": "660de84d-5386-42d8-a1dd-ea6fcd4eb4c5",
       "label": "AIRTEL",
       "category": "Bills",
       "type": "other",
@@ -1488,203 +924,206 @@
       "frequency": "monthly",
       "monthly_estimate": 899.0,
       "transaction_ids": [
-        "2c07a4f3-1564-456a-8c3a-51e45b77b73c",
-        "5152afbc-eda6-4e04-8b29-98c97a498241",
-        "76bd77c9-1360-4620-b553-e9beef4eb1e8"
+        "c2bba8b8-24c7-4dcf-8805-10ab8c670bb9",
+        "6593f8a3-afdf-4103-a0ac-85aec972343e",
+        "3015dabc-91b6-4dd8-a6fa-df8b4c202d72",
+        "82f7a605-e63e-4ef2-a495-df7a386ef4f7"
       ],
-      "next_expected_date": "2025-04-14"
-    },
-    {
-      "id": "df042393-ab26-4ecb-afca-b920305797be",
-      "label": "JIO",
-      "category": "Bills",
-      "type": "other",
-      "amount": 666.0,
-      "frequency": "monthly",
-      "monthly_estimate": 666.0,
-      "transaction_ids": [
-        "feeb317a-c815-4293-a1bf-ff57eee9e193",
-        "132121af-7db0-4c88-85df-632ad3125c0a"
-      ],
-      "next_expected_date": "2025-03-23"
-    },
-    {
-      "id": "fe6403e9-1eab-449f-9851-63fdd5930f26",
-      "label": "FASTAG",
-      "category": "Travel",
-      "type": "other",
-      "amount": 125.0,
-      "frequency": "weekly",
-      "monthly_estimate": 541.25,
-      "transaction_ids": [
-        "d1941f1f-326e-4717-80b6-e3dae8cb65ec",
-        "744729e9-453c-40b0-a604-6b7e901848bf"
-      ],
-      "next_expected_date": "2025-03-16"
+      "next_expected_date": "2026-05-18"
     }
   ],
   "metrics": {
-    "period_start": "2025-01-01",
-    "period_end": "2025-03-27",
-    "total_income": 270050.0,
-    "total_spend": 189915.0,
-    "savings": 80135.0,
-    "savings_rate": 0.2967,
-    "transaction_count": 72,
+    "period_start": "2026-01-02",
+    "period_end": "2026-04-20",
+    "total_income": 320000.0,
+    "total_spend": 61691.0,
+    "savings": 258309.0,
+    "savings_rate": 0.8072,
+    "transaction_count": 46,
     "by_category": {
-      "Food": 9913.0,
-      "Travel": 7757.0,
-      "Shopping": 23762.0,
-      "Bills": 4029.0,
-      "EMI": 45000.0,
-      "Subscriptions": 2304.0,
+      "Food": 3740.0,
+      "Groceries": 19650.0,
+      "Travel": 10060.0,
+      "Shopping": 6449.0,
+      "Bills": 13596.0,
+      "EMI": 0.0,
+      "Subscriptions": 1996.0,
       "Salary": 0.0,
-      "Rent": 75000.0,
-      "Investments": 15000.0,
-      "Other": 7150.0
+      "Rent": 0.0,
+      "Investments": 0.0,
+      "Other": 6200.0
     },
     "top_categories": [
       {
-        "category": "Rent",
-        "amount": 75000.0,
-        "percentage": 39.49,
-        "transaction_count": 3
-      },
-      {
-        "category": "EMI",
-        "amount": 45000.0,
-        "percentage": 23.69,
-        "transaction_count": 3
-      },
-      {
-        "category": "Shopping",
-        "amount": 23762.0,
-        "percentage": 12.51,
-        "transaction_count": 12
-      },
-      {
-        "category": "Investments",
-        "amount": 15000.0,
-        "percentage": 7.9,
-        "transaction_count": 3
-      },
-      {
-        "category": "Food",
-        "amount": 9913.0,
-        "percentage": 5.22,
-        "transaction_count": 22
-      },
-      {
-        "category": "Travel",
-        "amount": 7757.0,
-        "percentage": 4.08,
-        "transaction_count": 10
-      },
-      {
-        "category": "Other",
-        "amount": 7150.0,
-        "percentage": 3.76,
-        "transaction_count": 3
+        "category": "Groceries",
+        "amount": 19650.0,
+        "percentage": 31.85,
+        "transaction_count": 8
       },
       {
         "category": "Bills",
-        "amount": 4029.0,
-        "percentage": 2.12,
-        "transaction_count": 5
+        "amount": 13596.0,
+        "percentage": 22.04,
+        "transaction_count": 8
+      },
+      {
+        "category": "Travel",
+        "amount": 10060.0,
+        "percentage": 16.31,
+        "transaction_count": 8
+      },
+      {
+        "category": "Shopping",
+        "amount": 6449.0,
+        "percentage": 10.45,
+        "transaction_count": 4
+      },
+      {
+        "category": "Other",
+        "amount": 6200.0,
+        "percentage": 10.05,
+        "transaction_count": 2
+      },
+      {
+        "category": "Food",
+        "amount": 3740.0,
+        "percentage": 6.06,
+        "transaction_count": 8
       },
       {
         "category": "Subscriptions",
-        "amount": 2304.0,
-        "percentage": 1.21,
-        "transaction_count": 6
+        "amount": 1996.0,
+        "percentage": 3.24,
+        "transaction_count": 4
       }
     ],
     "biggest_debit": {
-      "id": "3effaff2-976b-4571-bfb1-9cbe66eb32f5",
-      "date": "2025-01-03",
-      "description": "RAHUL KUMAR RENT MAR",
-      "amount": 25000.0,
-      "category": "Rent"
+      "id": "61dfb065-3f7e-4a5c-8371-ee91741c664a",
+      "date": "2026-02-22",
+      "description": "MAKE MY TRIP FLIGHT",
+      "amount": 6500.0,
+      "category": "Travel"
     },
     "biggest_credit": {
-      "id": "96823cec-95a4-416a-9354-a53683aaf1eb",
-      "date": "2025-01-01",
-      "description": "ACME TECH PVT LTD SALARY JAN2025",
-      "amount": 85000.0,
+      "id": "5b4ddfed-492d-4406-af34-7b3367e2f1c0",
+      "date": "2026-01-03",
+      "description": "SALARY TECHCORP",
+      "amount": 80000.0,
       "category": "Salary"
     },
     "monthly_spend": [
       {
-        "month": "2025-01",
-        "amount": 66357.0,
-        "transaction_count": 25
+        "month": "2026-01",
+        "amount": 17968.0,
+        "transaction_count": 13
       },
       {
-        "month": "2025-02",
-        "amount": 64082.0,
-        "transaction_count": 19
+        "month": "2026-02",
+        "amount": 21528.0,
+        "transaction_count": 13
       },
       {
-        "month": "2025-03",
-        "amount": 59476.0,
-        "transaction_count": 23
+        "month": "2026-03",
+        "amount": 14397.0,
+        "transaction_count": 12
+      },
+      {
+        "month": "2026-04",
+        "amount": 7798.0,
+        "transaction_count": 4
       }
     ],
-    "recurring_monthly_total": 58888.25
+    "recurring_monthly_total": 3898.0
   },
   "insights": [
     {
-      "id": "4b0daafd-ff75-4798-9028-cfe7584abd6c",
+      "id": "f2f3331c-4037-4404-ae1f-4b4491f1877d",
       "title": "Top spending category",
-      "body": "Rent is your largest expense at \u20b975,000 (39.5% of total spend).",
-      "category": "Rent",
-      "amount": 75000.0,
+      "body": "Groceries is your largest expense at \u20b919,650 (31.9% of total spend).",
+      "category": "Groceries",
+      "amount": 19650.0,
       "severity": "info",
       "source": "template"
     },
     {
-      "id": "d91b9934-3671-451e-be17-049c76fbbb43",
+      "id": "9bf6841b-1b7a-46b5-b417-1e0789c1860c",
       "title": "Fixed recurring payments",
-      "body": "Fixed recurring payments total \u20b958,888/month across 10 merchants.",
+      "body": "Fixed recurring payments total \u20b93,898/month across 3 merchants.",
       "category": null,
-      "amount": 58888.25,
+      "amount": 3898.0,
       "severity": "warning",
       "source": "template"
     },
     {
-      "id": "98faa840-8c08-4194-9476-a1cd5d0259b2",
+      "id": "2fcdc60e-e800-40f6-9dc0-93a63d69cae6",
       "title": "Largest transaction",
-      "body": "Your largest transaction was \u20b925,000 (RAHUL KUMAR RENT MAR) on 2025-01-03.",
-      "category": "Rent",
-      "amount": 25000.0,
+      "body": "Your largest transaction was \u20b96,500 (MAKE MY TRIP FLIGHT) on 2026-02-22.",
+      "category": "Travel",
+      "amount": 6500.0,
       "severity": "info",
       "source": "template"
     },
     {
-      "id": "7afe3cc9-ece0-46de-8ade-c79dcd3a2b33",
+      "id": "fcbad10d-1aea-4e52-93b7-5dc0c164ef5b",
       "title": "Active subscriptions",
-      "body": "You have 2 active subscriptions costing \u20b9768/month.",
+      "body": "You have 1 active subscription(s) out of 3 recurring payments, costing \u20b9499/month.",
       "category": "Subscriptions",
-      "amount": 768.0,
+      "amount": 499.0,
       "severity": "info",
       "source": "template"
     },
     {
-      "id": "e5c5d89c-68c2-416f-9a0a-4cc1b377734d",
-      "title": "Savings this period",
-      "body": "You saved \u20b980,135 (29.7% of income).",
+      "id": "e4947a05-2c07-4ef8-b122-50e3816c4e6a",
+      "title": "Month-over-month spend change",
+      "body": "Total spending decreased 46% from 2026-03 to 2026-04.",
       "category": null,
-      "amount": 80135.0,
+      "amount": 7798.0,
       "severity": "positive",
       "source": "template"
+    },
+    {
+      "id": "9f6120e9-c6f5-4e9f-8c0e-b4492dcdfc02",
+      "title": "Savings this period",
+      "body": "You saved \u20b9258,309 (80.7% of income).",
+      "category": null,
+      "amount": 258309.0,
+      "severity": "positive",
+      "source": "template"
+    },
+    {
+      "id": "11303b14-3e4a-43e8-a82c-31f6796cd1c4",
+      "title": "Low Savings Rate",
+      "body": "Your total spend is approximately 19% of your total income, which is relatively high, and may impact long-term savings goals. Consider allocating a larger portion of your income towards savings and investments.",
+      "category": "Savings",
+      "amount": null,
+      "severity": "warning",
+      "source": "llm"
+    },
+    {
+      "id": "0b0bd682-2686-4152-b8f0-3fdaa98006d4",
+      "title": "Grocery Spending",
+      "body": "Your grocery spend accounts for the largest portion of your expenses, totaling $19,650, which may indicate opportunities for optimization and cost savings. Reviewing your grocery shopping habits and exploring discounts or budgeting strategies could help reduce this expense.",
+      "category": "Groceries",
+      "amount": null,
+      "severity": "info",
+      "source": "llm"
+    },
+    {
+      "id": "491d4966-6f57-4cfc-aff2-d1b4eb298280",
+      "title": "Recurring Expenses",
+      "body": "Your recurring expenses total $3,898, which is a relatively manageable amount, but it's essential to regularly review these expenses to ensure they align with your needs and budget. Consider negotiating better rates or canceling unused subscriptions to minimize unnecessary expenses.",
+      "category": "Subscriptions",
+      "amount": null,
+      "severity": "info",
+      "source": "llm"
     }
   ],
   "summary": {
-    "total_income": 270050.0,
-    "total_spend": 189915.0,
-    "savings": 80135.0,
-    "transaction_count": 72,
-    "insight_count": 5
+    "total_income": 320000.0,
+    "total_spend": 61691.0,
+    "savings": 258309.0,
+    "transaction_count": 46,
+    "insight_count": 9
   },
   "error": null
 }
