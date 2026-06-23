@@ -6,7 +6,7 @@ import { useAnalysis } from '../hooks/useAnalysis'
 
 export function UploadPage() {
   const navigate = useNavigate()
-  const { loading, error, analyze } = useAnalysis()
+  const { loading, error, analyze, loadDemoData } = useAnalysis()
   const [apiStatus, setApiStatus] = useState<string>('checking')
 
   useEffect(() => {
@@ -17,11 +17,16 @@ export function UploadPage() {
 
   const handleFile = async (file: File) => {
     try {
-      const result = await analyze(file)
-      navigate('/dashboard', { state: { result } })
+      await analyze(file)
+      navigate('/dashboard')
     } catch {
       // error surfaced via hook
     }
+  }
+
+  const handleDemoLoad = () => {
+    loadDemoData()
+    navigate('/dashboard')
   }
 
   return (
@@ -33,7 +38,24 @@ export function UploadPage() {
         </p>
         <p className="mt-2 text-xs text-secondary">Backend: {apiStatus}</p>
       </div>
-      <UploadZone onFileSelect={handleFile} loading={loading} />
+
+      <div className="flex flex-col gap-4">
+        <UploadZone onFileSelect={handleFile} loading={loading} />
+        
+        <div className="flex items-center justify-between gap-4 p-4 rounded-xl border border-outline-variant/10 bg-surface-container-low/50">
+          <div>
+            <p className="text-sm font-bold text-foreground">No bank statement on hand?</p>
+            <p className="text-xs text-on-surface-variant">Try RupeeRadar with a simulated bank statement instantly.</p>
+          </div>
+          <button
+            onClick={handleDemoLoad}
+            className="rounded-lg bg-primary/10 border border-primary/20 text-primary px-4 py-2 text-sm font-bold hover:bg-primary/20 transition-all active:scale-95 whitespace-nowrap shadow-sm shadow-primary/5 cursor-pointer"
+          >
+            Load Demo Data
+          </button>
+        </div>
+      </div>
+
       {error && (
         <p className="rounded-lg border border-error bg-error/10 px-4 py-3 text-sm text-error">
           {error}

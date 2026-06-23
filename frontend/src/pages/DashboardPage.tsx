@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { TrendsChart } from '../components/TrendsChart'
 import { RecurringList } from '../components/RecurringList'
 import { ReportView } from '../components/ReportView'
@@ -7,14 +6,20 @@ import { SummaryCards } from '../components/SummaryCards'
 import { TransactionTable } from '../components/TransactionTable'
 import { WealthGoals } from '../components/WealthGoals'
 import { PortfolioAudit } from '../components/PortfolioAudit'
-import type { AnalysisResult } from '../types/finance'
+import { useAnalysis } from '../hooks/useAnalysis'
 
 type Tab = 'overview' | 'transactions' | 'recurring' | 'portfolio_audit' | 'report'
 
 export function DashboardPage() {
-  const location = useLocation()
-  const result = (location.state as { result?: AnalysisResult } | null)?.result ?? null
-  const [tab, setTab] = useState<Tab>('overview')
+  const [searchParams] = useSearchParams()
+  const navigate = useNavigate()
+  const { result, clearAnalysis } = useAnalysis()
+  const tab = (searchParams.get('tab') as Tab) || 'overview'
+
+  const handleNewUpload = async () => {
+    await clearAnalysis()
+    navigate('/')
+  }
 
   if (!result) {
     return (
@@ -30,52 +35,31 @@ export function DashboardPage() {
     )
   }
 
-  const tabs: { id: Tab; label: string }[] = [
-    { id: 'overview', label: 'Overview' },
-    { id: 'transactions', label: 'Ledger' },
-    { id: 'recurring', label: 'Recurring' },
-    { id: 'portfolio_audit', label: 'Portfolio Audit' },
-    { id: 'report', label: 'Report' },
-  ]
+  const tabTitles = {
+    overview: 'Overview',
+    transactions: 'Institutional Ledger',
+    recurring: 'Recurring Payments',
+    portfolio_audit: 'Portfolio Audit',
+    report: 'Financial Report Summary',
+  }
 
   return (
     <div className="space-y-xl">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h1 className="font-serif text-[32px] font-bold text-foreground">Dashboard</h1>
+          <h1 className="font-serif text-[32px] font-bold text-foreground">{tabTitles[tab] || 'Dashboard'}</h1>
           <p className="text-sm font-medium text-on-surface-variant uppercase tracking-widest break-all">Source: {result.filename}</p>
         </div>
-        <Link
-          to="/"
-          className="rounded-xl bg-primary px-6 py-2.5 text-sm font-bold text-primary-foreground hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-95"
+        <button
+          onClick={handleNewUpload}
+          className="rounded-xl bg-primary px-6 py-2.5 text-sm font-bold text-primary-foreground hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-95 cursor-pointer"
         >
           New upload
-        </Link>
+        </button>
       </div>
 
       {/* Hero Stats Row */}
       <SummaryCards metrics={result.metrics} />
-
-      {/* Tabs */}
-      <nav className="flex flex-wrap space-x-6 border-b border-outline-variant/10">
-        {tabs.map((t) => (
-          <button
-            key={t.id}
-            type="button"
-            onClick={() => setTab(t.id)}
-            className={`pb-3 text-sm font-bold uppercase tracking-widest transition-all relative ${
-              tab === t.id
-                ? 'text-primary'
-                : 'text-on-surface-variant hover:text-on-surface'
-            }`}
-          >
-            {t.label}
-            {tab === t.id && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-primary rounded-t-full shadow-[0_-2px_10px_rgba(16,185,129,0.5)]"></div>
-            )}
-          </button>
-        ))}
-      </nav>
 
       {/* Tab Content */}
       <div className="pt-2">

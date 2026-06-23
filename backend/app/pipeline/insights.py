@@ -232,6 +232,7 @@ def _category_spend_by_month(
         if txn.date.strftime("%Y-%m") != month:
             continue
         cat = txn.category.value if txn.category else Category.OTHER.value
+        totals[cat] += txn.amount
     return dict(totals)
 
 
@@ -264,6 +265,7 @@ def enrich_with_llm(
     
     system_prompt = """You are a financial advisor. Based on the user's spending summary, generate 3 personalized financial insights.
 Provide actionable advice, observations on spending habits, or warnings about high spend areas.
+Always format any currency amounts in Indian Rupees (e.g., ₹5,000) and never use USD ($) symbols.
 Return ONLY a valid JSON object matching this schema:
 {
   "insights": [

@@ -25,8 +25,8 @@ export function CategoryChart({ metrics }: CategoryChartProps) {
   return (
     <div className="flex h-80 flex-col rounded-xl border border-border bg-surface p-4">
       <h3 className="mb-2 text-sm font-semibold text-foreground/80">Spending by category</h3>
-      <div className="min-h-0 flex-1 w-full">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="min-h-0 flex-1 w-full min-h-[250px]">
+        <ResponsiveContainer width="100%" height="100%" minHeight={250}>
           <PieChart>
             <Pie 
               data={data} 

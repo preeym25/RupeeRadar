@@ -99,8 +99,8 @@ export function TrendsChart({ transactions }: TrendsChartProps) {
         </div>
       </div>
 
-      <div className="min-h-0 flex-1 w-full relative z-10">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="min-h-0 flex-1 w-full relative z-10 min-h-[300px]">
+        <ResponsiveContainer width="100%" height="100%" minHeight={300}>
           <AreaChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
             <defs>
               <linearGradient id="glowLine" x1="0%" x2="100%" y1="0%" y2="0%">
@@ -121,7 +121,7 @@ export function TrendsChart({ transactions }: TrendsChartProps) {
               dataKey="display" 
               axisLine={false} 
               tickLine={false} 
-              tick={{ fontSize: 10, fill: 'var(--color-surface-foreground-variant)', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.1em' }} 
+              tick={{ fontSize: 10, fill: 'var(--color-surface-foreground-variant)', fontFamily: 'monospace' }} 
               dy={15}
             />
             <YAxis 
@@ -131,7 +131,7 @@ export function TrendsChart({ transactions }: TrendsChartProps) {
               tickFormatter={(value) => `₹${value >= 1000 ? (value / 1000).toFixed(0) + 'k' : value}`}
             />
             <Tooltip 
-              formatter={(value: number) => [`₹${Number(value).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`, 'Amount']}
+              formatter={(value: any) => [`₹${Number(value).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`, 'Amount']}
               labelStyle={{ color: 'var(--color-surface-foreground-variant)', fontSize: '12px' }}
               contentStyle={{ 
                 backgroundColor: 'rgba(16, 20, 21, 0.9)', 

@@ -4,6 +4,14 @@
   --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
   
+  /* Spacing Tokens */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-base: 1rem;
+  --spacing-md: 1.25rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
   --color-background: #0b0f10;
   --color-foreground: #e0e3e5;
   
@@ -25,6 +33,9 @@
   --color-surface-container-highest: #323537;
   --color-surface-foreground: #e0e3e5;
   --color-surface-foreground-variant: #c6c6cd;
+  
+  --color-on-surface: var(--color-surface-foreground);
+  --color-on-surface-variant: var(--color-surface-foreground-variant);
   
   --color-border: #323537;
   --color-border-bright: #45464d;

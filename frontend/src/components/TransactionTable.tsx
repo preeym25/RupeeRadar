@@ -34,6 +34,8 @@ export function TransactionTable({ transactions }: TransactionTableProps) {
         return 'text-orange-400 bg-orange-400/10'
       case 'food':
         return 'text-yellow-400 bg-yellow-400/10'
+      case 'groceries':
+        return 'text-emerald-400 bg-emerald-400/10'
       case 'shopping':
         return 'text-purple-400 bg-purple-400/10'
       case 'travel':

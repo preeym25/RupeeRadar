@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     groq_model: str = "llama-3.3-70b-versatile"
     enable_llm: bool = False
 
+    database_url: str = "sqlite:///./rupeeradar.db"
+
     @property
     def cors_origin_list(self) -> list[str]:
         return [origin.strip() for origin in self.cors_origins.split(",") if origin.strip()]

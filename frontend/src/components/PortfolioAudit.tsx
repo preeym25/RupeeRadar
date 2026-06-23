@@ -19,10 +19,10 @@ export function PortfolioAudit({ result }: { result: AnalysisResult }) {
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="glass-panel p-lg rounded-2xl hairline-border flex flex-col items-center">
+        <div className="glass-panel p-lg rounded-2xl hairline-border flex flex-col items-center self-start sticky top-24 w-full">
           <h4 className="text-label-sm font-bold uppercase tracking-widest w-full text-on-surface-variant mb-4">Capital Allocation</h4>
-          <div className="h-80 w-full">
-            <ResponsiveContainer width="100%" height="100%">
+          <div className="h-80 w-full min-h-[320px]">
+            <ResponsiveContainer width="100%" height="100%" minHeight={320}>
               <PieChart>
                 <Pie
                   data={expenseData}
@@ -39,7 +39,7 @@ export function PortfolioAudit({ result }: { result: AnalysisResult }) {
                   ))}
                 </Pie>
                 <Tooltip 
-                  formatter={(value: number) => `₹${value.toLocaleString()}`}
+                  formatter={(value: any) => `₹${Number(value).toLocaleString()}`}
                   contentStyle={{ backgroundColor: 'rgba(16, 20, 21, 0.9)', border: '1px solid rgba(144, 144, 151, 0.1)', borderRadius: '8px' }}
                   itemStyle={{ color: '#e0e3e5' }}
                 />

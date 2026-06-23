@@ -23,7 +23,7 @@ _RENT_KEYWORDS = re.compile(r"\b(rent|landlord|housing)\b", re.IGNORECASE)
 
 _INTERVAL_RANGES: dict[RecurringFrequency, tuple[int, int]] = {
     RecurringFrequency.WEEKLY: (6, 9),
-    RecurringFrequency.MONTHLY: (27, 35),
+    RecurringFrequency.MONTHLY: (25, 37),
     RecurringFrequency.QUARTERLY: (85, 95),
     RecurringFrequency.YEARLY: (360, 370),
 }
@@ -110,11 +110,22 @@ def merge_recurring_flags(
     ]
 
 
+def _clean_desc_signature(desc: str) -> str:
+    # Keep only letters and spaces, lowercase it
+    words = re.findall(r'[a-zA-Z]+', desc.lower())
+    stop_words = {'payment', 'transfer', 'to', 'from', 'debit', 'txn', 'transaction', 'paid', 'ref'}
+    meaningful_words = [w for w in words if w not in stop_words and len(w) > 2]
+    if not meaningful_words:
+        meaningful_words = [w for w in words if len(w) > 1]
+    return "_".join(meaningful_words[:2])
+
+
 def _group_key(txn: Transaction) -> str:
     if txn.merchant:
         return f"merchant:{txn.merchant.upper()}"
     bucket = round(txn.amount / 100) * 100
-    return f"amount:{bucket:.0f}"
+    sig = _clean_desc_signature(txn.description_clean)
+    return f"desc_amount:{sig}:{bucket:.0f}"
 
 
 def _amounts_consistent(amounts: list[float], mean_amt: float) -> bool:

@@ -121,7 +121,7 @@ def generate_html_report(result: AnalysisResult) -> str:
         html += f"""
                 <tr>
                     <td>{debit.date}</td>
-                    <td>{debit.description_clean or debit.description}</td>
+                    <td>{debit.description_clean or debit.description_raw}</td>
                     <td>{debit.category.value if debit.category else 'Unknown'}</td>
                     <td class="amount debit">₹{debit.amount:,.2f}</td>
                 </tr>

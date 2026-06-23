@@ -205,3 +205,65 @@ class TestGenerateSampleOutput:
         output_path = Path(__file__).parent.parent.parent / "sample_data" / "sample_analysis_output.json"
         with open(output_path, "w", encoding="utf-8") as out:
             json.dump(response.json(), out, indent=2, default=str)
+
+
+class TestRecurrenceImprovements:
+    def test_different_descriptions_same_amount_not_grouped(self):
+        from tests.test_phase1 import make_transaction
+        txns = [
+            make_transaction(
+                amount=510.0,
+                txn_type="debit",
+                merchant=None,
+                category=Category.FOOD,
+                txn_date=date(2025, 1, 5),
+                description_raw="CAFE COFFEE DAY BANGALORE",
+            ),
+            make_transaction(
+                amount=490.0,
+                txn_type="debit",
+                merchant=None,
+                category=Category.SHOPPING,
+                txn_date=date(2025, 2, 5),
+                description_raw="GROCERY STORE IN NEIGHBORHOOD",
+            ),
+        ]
+        txns[0].description_clean = "CAFE COFFEE DAY BANGALORE"
+        txns[1].description_clean = "GROCERY STORE IN NEIGHBORHOOD"
+        
+        groups = detect_recurring(txns)
+        assert len(groups) == 0
+
+    def test_extended_monthly_interval_detected(self):
+        from tests.test_phase1 import make_transaction
+        txns = [
+            make_transaction(
+                amount=1000.0,
+                txn_type="debit",
+                merchant="MY_SERVICE",
+                category=Category.SUBSCRIPTIONS,
+                txn_date=date(2025, 1, 1),
+            ),
+            make_transaction(
+                amount=1000.0,
+                txn_type="debit",
+                merchant="MY_SERVICE",
+                category=Category.SUBSCRIPTIONS,
+                txn_date=date(2025, 1, 27),
+            ),
+            make_transaction(
+                amount=1000.0,
+                txn_type="debit",
+                merchant="MY_SERVICE",
+                category=Category.SUBSCRIPTIONS,
+                txn_date=date(2025, 3, 5),
+            ),
+        ]
+        for t in txns:
+            t.description_clean = t.description_raw
+            
+        groups = detect_recurring(txns)
+        assert len(groups) >= 1
+        group = groups[0]
+        assert group.frequency.value == "monthly"
+
