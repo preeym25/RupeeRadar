@@ -1,12 +1,12 @@
 {
-  "job_id": "e2d913a3-5920-434c-961e-a75b3b6658c8",
+  "job_id": "c92ebb71-f23c-4c14-a279-0fc3bd147faf",
   "status": "completed",
   "filename": "sample_statement.csv",
-  "created_at": "2026-06-23T17:04:51.590315Z",
-  "expires_at": "2026-06-23T18:04:51.590315Z",
+  "created_at": "2026-06-24T06:55:05.615605Z",
+  "expires_at": "2026-06-24T07:55:05.615605Z",
   "transactions": [
     {
-      "id": "b1f554d5-557f-44f1-9dee-8f397c63064e",
+      "id": "03318b87-2506-4686-9889-cf6dc02d836c",
       "date": "2026-01-02",
       "description_raw": "UPI/SWIGGY/123456789",
       "description_clean": "SWIGGY 123456789",
@@ -25,7 +25,7 @@
       }
     },
     {
-      "id": "0c8450ec-aa9d-40b0-991f-a6ff2ea91053",
+      "id": "69c5b0fd-af2c-452a-8464-84beedba0626",
       "date": "2026-01-03",
       "description_raw": "NEFT/SALARY/TECHCORP",
       "description_clean": "SALARY TECHCORP",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "id": "73d0d6c5-dd6d-4b57-84a7-69fea9e252a1",
+      "id": "984ea0a6-fab4-4460-9cf5-405cb8316b7a",
       "date": "2026-01-04",
       "description_raw": "UPI/ZOMATO/987654321",
       "description_clean": "ZOMATO 987654321",
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "c34c0074-9783-425b-9aeb-1ca159119010",
+      "id": "c167089d-e5ed-4520-8aae-ce1d929b3817",
       "date": "2026-01-05",
       "description_raw": "AMAZON PAY INDIA",
       "description_clean": "AMAZON PAY INDIA",
@@ -82,7 +82,7 @@
       }
     },
     {
-      "id": "256f3ed6-297b-4182-b3d7-ea4c212e638e",
+      "id": "c6b249e3-90d8-43fe-86dc-c174091bdc36",
       "date": "2026-01-06",
       "description_raw": "NETFLIX SUBSCRIPTION",
       "description_clean": "NETFLIX SUBSCRIPTION",
@@ -93,7 +93,7 @@
       "category_confidence": 0.9,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "59e958ae-d7d2-45bb-bf17-1c15072d1e71",
+      "recurring_group_id": "a5b52503-d339-4728-84b0-6ecc02e9f3d0",
       "metadata": {
         "source_row": 6,
         "balance": null,
@@ -101,7 +101,7 @@
       }
     },
     {
-      "id": "f7c2c47b-09d6-4096-99a0-87c32b722e43",
+      "id": "ae3dfa5a-8fec-484c-9091-12a6a54cc9b2",
       "date": "2026-01-10",
       "description_raw": "ATM WITHDRAWAL SBI",
       "description_clean": "ATM WITHDRAWAL SBI",
@@ -121,7 +121,7 @@
       }
     },
     {
-      "id": "42796157-76ab-41e8-8f9b-9e9254932393",
+      "id": "9a157c21-1b44-43a0-a48b-d77e8e7c627f",
       "date": "2026-01-12",
       "description_raw": "UPI/Blinkit/grocery",
       "description_clean": "Blinkit grocery",
@@ -140,7 +140,7 @@
       }
     },
     {
-      "id": "9e7c8ebc-bf6d-4a19-8040-e63e1bfbcf2a",
+      "id": "83e2d090-2925-462a-b37a-74a15a8a8828",
       "date": "2026-01-15",
       "description_raw": "HDFC LIFE INSURANCE EMI",
       "description_clean": "HDFC LIFE INSURANCE EMI",
@@ -151,7 +151,7 @@
       "category_confidence": 0.8,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "3b1fe943-6b75-4f9f-af82-30a858f3c459",
+      "recurring_group_id": "0623006a-b49e-4a7e-8e59-8e2be20f663f",
       "metadata": {
         "source_row": 9,
         "balance": null,
@@ -159,7 +159,7 @@
       }
     },
     {
-      "id": "a1fbb396-a5b5-4a26-9f6a-1a145653eb91",
+      "id": "89d8389e-7a7e-407e-a67a-76a1cf2d833c",
       "date": "2026-01-18",
       "description_raw": "UBER INDIA",
       "description_clean": "UBER INDIA",
@@ -178,7 +178,7 @@
       }
     },
     {
-      "id": "6903407e-9ffb-40eb-af62-5d855b1811ff",
+      "id": "380434c5-a3e6-4b2e-bb4d-618fe9daf165",
       "date": "2026-01-20",
       "description_raw": "RELIANCE SMART",
       "description_clean": "RELIANCE SMART",
@@ -197,7 +197,7 @@
       }
     },
     {
-      "id": "1d584ff6-768a-4eca-840a-74365e329fcb",
+      "id": "8c9bc116-c8fc-4163-a775-b343f50fd41a",
       "date": "2026-01-22",
       "description_raw": "OLA CABS",
       "description_clean": "OLA CABS",
@@ -216,7 +216,7 @@
       }
     },
     {
-      "id": "9c3b8a6f-9348-4fdd-aa4f-a0f30220205a",
+      "id": "6308041f-3879-48e2-9098-9eda6d2df246",
       "date": "2026-01-25",
       "description_raw": "UPI/Zepto/grocery",
       "description_clean": "Zepto grocery",
@@ -235,7 +235,7 @@
       }
     },
     {
-      "id": "ff7ddcb0-7465-4446-acea-ab70c90f71b2",
+      "id": "efbaf6fb-8a35-4113-866d-dbb688e888d1",
       "date": "2026-01-28",
       "description_raw": "AIRTEL POSTPAID BILL",
       "description_clean": "AIRTEL POSTPAID BILL",
@@ -246,7 +246,7 @@
       "category_confidence": 0.85,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "8fae7fbc-bfff-48bd-85cc-e88db69ab921",
+      "recurring_group_id": "5c1b50f1-2c0e-4269-8aef-9f432d576efe",
       "metadata": {
         "source_row": 14,
         "balance": null,
@@ -254,7 +254,7 @@
       }
     },
     {
-      "id": "f3ab832c-6f65-49a9-86af-02dad7b9e109",
+      "id": "9bcea70b-2104-4ce2-b146-2e674815d69f",
       "date": "2026-01-30",
       "description_raw": "UPI/SWIGGY/11223344",
       "description_clean": "SWIGGY 11223344",
@@ -273,7 +273,7 @@
       }
     },
     {
-      "id": "73fd8fef-0fd1-4040-b74a-4b25454e5005",
+      "id": "ca6b467a-966e-4217-b098-f5cf02bac194",
       "date": "2026-02-01",
       "description_raw": "UPI/STARBUCKS/COFFEE",
       "description_clean": "STARBUCKS COFFEE",
@@ -293,7 +293,7 @@
       }
     },
     {
-      "id": "29afa154-5e6e-4485-8c28-add30831c26a",
+      "id": "a2fd2924-3329-4f65-b77b-d737fbb3d585",
       "date": "2026-02-02",
       "description_raw": "NEFT/SALARY/TECHCORP",
       "description_clean": "SALARY TECHCORP",
@@ -312,7 +312,7 @@
       }
     },
     {
-      "id": "11539889-1a1a-4986-ab67-509ebaf46e43",
+      "id": "8e22e612-b802-4efa-b83e-69c291fcc477",
       "date": "2026-02-04",
       "description_raw": "AMAZON RETAIL",
       "description_clean": "AMAZON RETAIL",
@@ -331,7 +331,7 @@
       }
     },
     {
-      "id": "1b29fac6-d882-46c3-93fa-a990d6aef88f",
+      "id": "eab986d9-ecbb-430e-9b7c-a8d194e692aa",
       "date": "2026-02-05",
       "description_raw": "NETFLIX SUBSCRIPTION",
       "description_clean": "NETFLIX SUBSCRIPTION",
@@ -342,7 +342,7 @@
       "category_confidence": 0.9,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "59e958ae-d7d2-45bb-bf17-1c15072d1e71",
+      "recurring_group_id": "a5b52503-d339-4728-84b0-6ecc02e9f3d0",
       "metadata": {
         "source_row": 19,
         "balance": null,
@@ -350,7 +350,7 @@
       }
     },
     {
-      "id": "e61a5082-7441-4b64-a4eb-7d9aa091921e",
+      "id": "f4fda7a9-b333-4c1c-bd6a-a2bacd374a1c",
       "date": "2026-02-08",
       "description_raw": "UPI/ZOMATO/22334455",
       "description_clean": "ZOMATO 22334455",
@@ -369,7 +369,7 @@
       }
     },
     {
-      "id": "6dac1d88-3c3a-4505-a76f-59d5ea0aed68",
+      "id": "4b41c149-9d08-4de7-9fab-069b7ce42e10",
       "date": "2026-02-10",
       "description_raw": "HDFC LIFE INSURANCE EMI",
       "description_clean": "HDFC LIFE INSURANCE EMI",
@@ -380,7 +380,7 @@
       "category_confidence": 0.8,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "3b1fe943-6b75-4f9f-af82-30a858f3c459",
+      "recurring_group_id": "0623006a-b49e-4a7e-8e59-8e2be20f663f",
       "metadata": {
         "source_row": 21,
         "balance": null,
@@ -388,7 +388,7 @@
       }
     },
     {
-      "id": "9cadc8d4-5a51-41cc-a875-05ab1c964563",
+      "id": "5f667ba0-688c-4966-8684-70d9e737a489",
       "date": "2026-02-12",
       "description_raw": "UBER INDIA",
       "description_clean": "UBER INDIA",
@@ -407,7 +407,7 @@
       }
     },
     {
-      "id": "0fd1f659-c453-48c6-8e7c-8c5593fa5353",
+      "id": "5babcbcf-2b2f-4d6f-9f8c-283dfffdb1fd",
       "date": "2026-02-14",
       "description_raw": "UPI/BOOKMYSHOW/MOVIES",
       "description_clean": "BOOKMYSHOW MOVIES",
@@ -426,7 +426,7 @@
       }
     },
     {
-      "id": "83a52a87-1257-49d3-9868-5943954b21cc",
+      "id": "7b99bf8b-6ce6-442c-86fe-48fb87abef0d",
       "date": "2026-02-15",
       "description_raw": "RELIANCE SMART",
       "description_clean": "RELIANCE SMART",
@@ -445,7 +445,7 @@
       }
     },
     {
-      "id": "cff70f5f-8302-448e-bbd1-5b577d7f30f1",
+      "id": "1a8c6b2d-e462-4424-a6c6-386e47ddfb3d",
       "date": "2026-02-18",
       "description_raw": "OLA CABS",
       "description_clean": "OLA CABS",
@@ -464,7 +464,7 @@
       }
     },
     {
-      "id": "3c1756b9-ae94-4572-8e49-c51978f1e2a1",
+      "id": "439abf52-1020-4143-aae9-5f617141a30e",
       "date": "2026-02-20",
       "description_raw": "AIRTEL POSTPAID BILL",
       "description_clean": "AIRTEL POSTPAID BILL",
@@ -475,7 +475,7 @@
       "category_confidence": 0.85,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "8fae7fbc-bfff-48bd-85cc-e88db69ab921",
+      "recurring_group_id": "5c1b50f1-2c0e-4269-8aef-9f432d576efe",
       "metadata": {
         "source_row": 26,
         "balance": null,
@@ -483,7 +483,7 @@
       }
     },
     {
-      "id": "48589b66-6e90-46cd-bd93-70502b7eaa86",
+      "id": "3087892b-4030-4f24-bd0c-47574eb22738",
       "date": "2026-02-22",
       "description_raw": "UPI/MAKE MY TRIP/FLIGHT",
       "description_clean": "MAKE MY TRIP FLIGHT",
@@ -502,7 +502,7 @@
       }
     },
     {
-      "id": "5f992d3b-bf58-4312-b47e-cabc932fdbbd",
+      "id": "159cf7cb-d55d-4cd4-bb08-b360e2ddc5a8",
       "date": "2026-02-25",
       "description_raw": "FLIPKART INTERNET",
       "description_clean": "FLIPKART INTERNET",
@@ -521,7 +521,7 @@
       }
     },
     {
-      "id": "db6a7069-c547-4bf3-8052-5588d690571a",
+      "id": "ec659bb4-3098-4822-92b5-13c8f033546c",
       "date": "2026-02-28",
       "description_raw": "UPI/ZOMATO/55667788",
       "description_clean": "ZOMATO 55667788",
@@ -540,7 +540,7 @@
       }
     },
     {
-      "id": "7dffc446-916e-4407-9e55-f759de136f94",
+      "id": "4b49c52a-65dc-490a-9180-fa1c07a9f6b2",
       "date": "2026-03-02",
       "description_raw": "NEFT/SALARY/TECHCORP",
       "description_clean": "SALARY TECHCORP",
@@ -559,7 +559,7 @@
       }
     },
     {
-      "id": "7f38e137-eb7b-42c7-9665-ca317893824c",
+      "id": "7c010766-6745-45ec-a44f-28e6533e9c04",
       "date": "2026-03-03",
       "description_raw": "UPI/SWIGGY/99887766",
       "description_clean": "SWIGGY 99887766",
@@ -578,7 +578,7 @@
       }
     },
     {
-      "id": "2f6c0554-c8fb-41a9-9eb1-ceab2c4f1d1c",
+      "id": "e2929cb2-11e1-437e-b121-c90da24e5a16",
       "date": "2026-03-05",
       "description_raw": "NETFLIX SUBSCRIPTION",
       "description_clean": "NETFLIX SUBSCRIPTION",
@@ -589,7 +589,7 @@
       "category_confidence": 0.9,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "59e958ae-d7d2-45bb-bf17-1c15072d1e71",
+      "recurring_group_id": "a5b52503-d339-4728-84b0-6ecc02e9f3d0",
       "metadata": {
         "source_row": 32,
         "balance": null,
@@ -597,7 +597,7 @@
       }
     },
     {
-      "id": "ccabbc28-be2f-42f2-b891-5ec410dd5f0d",
+      "id": "9d5149c4-c145-4dd3-9541-9b2f2adb676c",
       "date": "2026-03-06",
       "description_raw": "AMAZON PAY INDIA",
       "description_clean": "AMAZON PAY INDIA",
@@ -616,7 +616,7 @@
       }
     },
     {
-      "id": "7cc8daed-e3e0-4c02-997f-82b1e41bc181",
+      "id": "2296b98a-6705-4785-b9f7-5cc999ec9749",
       "date": "2026-03-10",
       "description_raw": "HDFC LIFE INSURANCE EMI",
       "description_clean": "HDFC LIFE INSURANCE EMI",
@@ -627,7 +627,7 @@
       "category_confidence": 0.8,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "3b1fe943-6b75-4f9f-af82-30a858f3c459",
+      "recurring_group_id": "0623006a-b49e-4a7e-8e59-8e2be20f663f",
       "metadata": {
         "source_row": 34,
         "balance": null,
@@ -635,7 +635,7 @@
       }
     },
     {
-      "id": "c56b9a68-faa7-4122-969e-7134477c7b85",
+      "id": "ec3c13db-2a4c-480f-bb9f-feb2a2d6dc19",
       "date": "2026-03-12",
       "description_raw": "UPI/Blinkit/grocery",
       "description_clean": "Blinkit grocery",
@@ -654,7 +654,7 @@
       }
     },
     {
-      "id": "e3c4d23e-882e-4d84-85c0-a87ac8a451e0",
+      "id": "9e6b5b31-a90a-4433-a3ad-1fcb6a1ca742",
       "date": "2026-03-15",
       "description_raw": "RELIANCE SMART",
       "description_clean": "RELIANCE SMART",
@@ -673,7 +673,7 @@
       }
     },
     {
-      "id": "ff961b21-ca80-4f69-bb98-b850f528a1d5",
+      "id": "0fe37b9c-b1e9-42fd-b8ca-3f1d0c6b702e",
       "date": "2026-03-18",
       "description_raw": "UBER INDIA",
       "description_clean": "UBER INDIA",
@@ -692,7 +692,7 @@
       }
     },
     {
-      "id": "73a1dee0-076d-48ab-b1f1-5ab20a8566bb",
+      "id": "7daf8620-b901-4c98-936d-650a5354175a",
       "date": "2026-03-20",
       "description_raw": "AIRTEL POSTPAID BILL",
       "description_clean": "AIRTEL POSTPAID BILL",
@@ -703,7 +703,7 @@
       "category_confidence": 0.85,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "8fae7fbc-bfff-48bd-85cc-e88db69ab921",
+      "recurring_group_id": "5c1b50f1-2c0e-4269-8aef-9f432d576efe",
       "metadata": {
         "source_row": 38,
         "balance": null,
@@ -711,7 +711,7 @@
       }
     },
     {
-      "id": "796de34d-bb9a-4411-9569-acff21456683",
+      "id": "5fdf6efc-109b-41e9-ac1c-c8dad71cc693",
       "date": "2026-03-22",
       "description_raw": "UPI/IRCTC/TRAIN",
       "description_clean": "IRCTC TRAIN",
@@ -730,7 +730,7 @@
       }
     },
     {
-      "id": "d0ecd065-17c0-4229-bf87-27c13892d476",
+      "id": "c0e6bf4d-9cfc-410a-9f45-66b2c9879107",
       "date": "2026-03-25",
       "description_raw": "OLA CABS",
       "description_clean": "OLA CABS",
@@ -749,7 +749,7 @@
       }
     },
     {
-      "id": "b8c565ca-c2e6-4a3f-95a1-7e3e05458857",
+      "id": "7c959d37-98ec-4f52-a971-3da61ebb6877",
       "date": "2026-03-28",
       "description_raw": "UPI/Zepto/grocery",
       "description_clean": "Zepto grocery",
@@ -768,7 +768,7 @@
       }
     },
     {
-      "id": "470d7c74-7182-4c52-ad71-a275e6d9b255",
+      "id": "c2f16271-c280-4ff9-90b0-f295fb7026d4",
       "date": "2026-03-30",
       "description_raw": "UPI/SWIGGY/11223355",
       "description_clean": "SWIGGY 11223355",
@@ -787,7 +787,7 @@
       }
     },
     {
-      "id": "bf912aff-c254-4b0a-9225-a37e692d58ce",
+      "id": "e41137f6-d4e4-43c8-9c0e-7aa6d18d5488",
       "date": "2026-04-02",
       "description_raw": "NEFT/SALARY/TECHCORP",
       "description_clean": "SALARY TECHCORP",
@@ -806,7 +806,7 @@
       }
     },
     {
-      "id": "9c1f3ca6-414b-4d0f-848c-ff2cee9aa136",
+      "id": "aeca0579-3355-4a76-aed6-f99efc2d6fa0",
       "date": "2026-04-05",
       "description_raw": "NETFLIX SUBSCRIPTION",
       "description_clean": "NETFLIX SUBSCRIPTION",
@@ -817,7 +817,7 @@
       "category_confidence": 0.9,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "59e958ae-d7d2-45bb-bf17-1c15072d1e71",
+      "recurring_group_id": "a5b52503-d339-4728-84b0-6ecc02e9f3d0",
       "metadata": {
         "source_row": 44,
         "balance": null,
@@ -825,7 +825,7 @@
       }
     },
     {
-      "id": "aeb8f82b-8ee5-49d8-988e-1a376ddca9ce",
+      "id": "e7524b3a-f35c-4660-85d0-4da2d2edf1ec",
       "date": "2026-04-10",
       "description_raw": "HDFC LIFE INSURANCE EMI",
       "description_clean": "HDFC LIFE INSURANCE EMI",
@@ -836,7 +836,7 @@
       "category_confidence": 0.8,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "3b1fe943-6b75-4f9f-af82-30a858f3c459",
+      "recurring_group_id": "0623006a-b49e-4a7e-8e59-8e2be20f663f",
       "metadata": {
         "source_row": 45,
         "balance": null,
@@ -844,7 +844,7 @@
       }
     },
     {
-      "id": "2a789831-a202-4893-bd32-567994ea80c4",
+      "id": "5e337eb1-a509-44fe-8853-79fd8ff14438",
       "date": "2026-04-15",
       "description_raw": "RELIANCE SMART",
       "description_clean": "RELIANCE SMART",
@@ -863,7 +863,7 @@
       }
     },
     {
-      "id": "d11d3a26-790f-4ae5-80c5-fb1efeb81da5",
+      "id": "a5d80d02-4860-4a98-96d3-2f792e24f5f5",
       "date": "2026-04-20",
       "description_raw": "AIRTEL POSTPAID BILL",
       "description_clean": "AIRTEL POSTPAID BILL",
@@ -874,7 +874,7 @@
       "category_confidence": 0.85,
       "is_recurring": true,
       "is_duplicate": false,
-      "recurring_group_id": "8fae7fbc-bfff-48bd-85cc-e88db69ab921",
+      "recurring_group_id": "5c1b50f1-2c0e-4269-8aef-9f432d576efe",
       "metadata": {
         "source_row": 47,
         "balance": null,
@@ -884,7 +884,7 @@
   ],
   "recurring": [
     {
-      "id": "59e958ae-d7d2-45bb-bf17-1c15072d1e71",
+      "id": "a5b52503-d339-4728-84b0-6ecc02e9f3d0",
       "label": "NETFLIX",
       "category": "Subscriptions",
       "type": "subscription",
@@ -892,15 +892,15 @@
       "frequency": "monthly",
       "monthly_estimate": 499.0,
       "transaction_ids": [
-        "256f3ed6-297b-4182-b3d7-ea4c212e638e",
-        "1b29fac6-d882-46c3-93fa-a990d6aef88f",
-        "2f6c0554-c8fb-41a9-9eb1-ceab2c4f1d1c",
-        "9c1f3ca6-414b-4d0f-848c-ff2cee9aa136"
+        "c6b249e3-90d8-43fe-86dc-c174091bdc36",
+        "eab986d9-ecbb-430e-9b7c-a8d194e692aa",
+        "e2929cb2-11e1-437e-b121-c90da24e5a16",
+        "aeca0579-3355-4a76-aed6-f99efc2d6fa0"
       ],
       "next_expected_date": "2026-05-05"
     },
     {
-      "id": "3b1fe943-6b75-4f9f-af82-30a858f3c459",
+      "id": "0623006a-b49e-4a7e-8e59-8e2be20f663f",
       "label": "HDFC LIFE",
       "category": "Bills",
       "type": "emi",
@@ -908,15 +908,15 @@
       "frequency": "monthly",
       "monthly_estimate": 2500.0,
       "transaction_ids": [
-        "9e7c8ebc-bf6d-4a19-8040-e63e1bfbcf2a",
-        "6dac1d88-3c3a-4505-a76f-59d5ea0aed68",
-        "7cc8daed-e3e0-4c02-997f-82b1e41bc181",
-        "aeb8f82b-8ee5-49d8-988e-1a376ddca9ce"
+        "83e2d090-2925-462a-b37a-74a15a8a8828",
+        "4b41c149-9d08-4de7-9fab-069b7ce42e10",
+        "2296b98a-6705-4785-b9f7-5cc999ec9749",
+        "e7524b3a-f35c-4660-85d0-4da2d2edf1ec"
       ],
       "next_expected_date": "2026-05-08"
     },
     {
-      "id": "8fae7fbc-bfff-48bd-85cc-e88db69ab921",
+      "id": "5c1b50f1-2c0e-4269-8aef-9f432d576efe",
       "label": "AIRTEL",
       "category": "Bills",
       "type": "other",
@@ -924,10 +924,10 @@
       "frequency": "monthly",
       "monthly_estimate": 899.0,
       "transaction_ids": [
-        "ff7ddcb0-7465-4446-acea-ab70c90f71b2",
-        "3c1756b9-ae94-4572-8e49-c51978f1e2a1",
-        "73a1dee0-076d-48ab-b1f1-5ab20a8566bb",
-        "d11d3a26-790f-4ae5-80c5-fb1efeb81da5"
+        "efbaf6fb-8a35-4113-866d-dbb688e888d1",
+        "439abf52-1020-4143-aae9-5f617141a30e",
+        "7daf8620-b901-4c98-936d-650a5354175a",
+        "a5d80d02-4860-4a98-96d3-2f792e24f5f5"
       ],
       "next_expected_date": "2026-05-18"
     }
@@ -998,14 +998,14 @@
       }
     ],
     "biggest_debit": {
-      "id": "48589b66-6e90-46cd-bd93-70502b7eaa86",
+      "id": "3087892b-4030-4f24-bd0c-47574eb22738",
       "date": "2026-02-22",
       "description": "MAKE MY TRIP FLIGHT",
       "amount": 6500.0,
       "category": "Travel"
     },
     "biggest_credit": {
-      "id": "0c8450ec-aa9d-40b0-991f-a6ff2ea91053",
+      "id": "69c5b0fd-af2c-452a-8464-84beedba0626",
       "date": "2026-01-03",
       "description": "SALARY TECHCORP",
       "amount": 80000.0,
@@ -1037,7 +1037,7 @@
   },
   "insights": [
     {
-      "id": "76a403b1-6280-40de-bc82-48154f3de1c3",
+      "id": "6b928389-7308-4667-a2ef-6c927d271229",
       "title": "Top spending category",
       "body": "Groceries is your largest expense at \u20b919,650 (31.9% of total spend).",
       "category": "Groceries",
@@ -1046,7 +1046,7 @@
       "source": "template"
     },
     {
-      "id": "74973a3e-73b8-40dc-8b5d-be04177cba8c",
+      "id": "72cd4a4a-c72d-41fc-b9a4-36aa2ee56b21",
       "title": "Fixed recurring payments",
       "body": "Fixed recurring payments total \u20b93,898/month across 3 merchants.",
       "category": null,
@@ -1055,7 +1055,7 @@
       "source": "template"
     },
     {
-      "id": "a8049277-9eeb-40bb-bfea-e276e8b1a8e6",
+      "id": "976eeda3-e81a-47ed-a4cc-3842012c23ad",
       "title": "Largest transaction",
       "body": "Your largest transaction was \u20b96,500 (MAKE MY TRIP FLIGHT) on 2026-02-22.",
       "category": "Travel",
@@ -1064,7 +1064,7 @@
       "source": "template"
     },
     {
-      "id": "a8ccc261-2a18-4abe-b2ca-0f165413bb74",
+      "id": "f8c1aee7-2b0a-4ab1-a2e9-467dd8b1fc3a",
       "title": "Active subscriptions",
       "body": "You have 1 active subscription(s) out of 3 recurring payments, costing \u20b9499/month.",
       "category": "Subscriptions",
@@ -1073,7 +1073,7 @@
       "source": "template"
     },
     {
-      "id": "7a0f0de3-6512-4010-8893-c29e60756e8c",
+      "id": "94b08591-0482-4823-8d6c-05e98e402a44",
       "title": "Month-over-month spend change",
       "body": "Total spending decreased 46% from 2026-03 to 2026-04.",
       "category": null,
@@ -1082,7 +1082,7 @@
       "source": "template"
     },
     {
-      "id": "54e3bfd0-e1a6-42e5-9c5d-85627e40f16f",
+      "id": "05d751d2-180d-4852-8f19-661667dea5b0",
       "title": "Savings this period",
       "body": "You saved \u20b9258,309 (80.7% of income).",
       "category": null,
@@ -1091,28 +1091,28 @@
       "source": "template"
     },
     {
-      "id": "ef4ba70e-f58f-4d1f-884b-03b116030aad",
-      "title": "High Grocery Spend",
-      "body": "Your grocery spend of \u20b919,650 is one of the highest categories, consider optimizing your grocery shopping list and exploring discounts to reduce this expense. Reviewing your grocery budget can help you save up to \u20b95,000 annually.",
-      "category": "Groceries",
-      "amount": null,
-      "severity": "warning",
-      "source": "llm"
-    },
-    {
-      "id": "53cfce38-8d95-4f6b-be33-2fc440ab16c6",
+      "id": "fc1daed7-2d6c-4954-b345-ed0d8f46c32a",
       "title": "Healthy Savings Rate",
-      "body": "You have a savings rate of approximately 80.5% of your total income, which is a positive sign of financial discipline and responsibility. Maintaining this savings rate will help you achieve your long-term financial goals.",
+      "body": "Your savings rate is approximately 80% of your total income, which is a good sign of financial discipline. This will help you achieve your long-term financial goals.",
       "category": null,
       "amount": null,
       "severity": "positive",
       "source": "llm"
     },
     {
-      "id": "40dc35e0-2f15-4ef0-928a-89ee5b8fbff4",
-      "title": "Optimize Recurring Expenses",
-      "body": "Your recurring expenses total \u20b93,898, which is a significant portion of your monthly spend. Review your subscriptions and bills to identify areas where you can cut back and allocate the saved amount towards your savings or investments.",
-      "category": "Recurring Expenses",
+      "id": "9872216d-216d-48c5-a299-fd45fd8bd9ac",
+      "title": "Grocery Expenses",
+      "body": "You spent \u20b919,650 on groceries, which is roughly 32% of your total expenses, indicating a significant portion of your expenditure goes towards essential items. Reviewing your grocery budget could help optimize your expenses.",
+      "category": "Groceries",
+      "amount": null,
+      "severity": "info",
+      "source": "llm"
+    },
+    {
+      "id": "eaf7ffa9-d9ae-4498-9350-67521164a93c",
+      "title": "Recurring Expenses",
+      "body": "Your recurring expenses total \u20b93,898, which is a relatively manageable amount, but it's essential to regularly review these expenses to ensure they are necessary and aligned with your financial priorities. Consider negotiating better rates or canceling unused subscriptions.",
+      "category": "Subscriptions",
       "amount": null,
       "severity": "info",
       "source": "llm"
