@@ -1,14 +1,29 @@
 services:
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=rupeeradar
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
   backend:
     build: ./backend
     ports:
       - "8000:8000"
     environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/rupeeradar
       - SESSION_TTL_MINUTES=60
       - CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
       - GROQ_API_KEY=${GROQ_API_KEY:-}
       - GROQ_MODEL=${GROQ_MODEL:-llama-3.3-70b-versatile}
       - ENABLE_LLM=${ENABLE_LLM:-false}
+    depends_on:
+      - db
     volumes:
       - ./backend/app:/app/app
 
@@ -20,3 +35,6 @@ services:
       - VITE_API_URL=http://localhost:8000
     depends_on:
       - backend
+
+volumes:
+  postgres_data:
